@@ -1,0 +1,311 @@
+# Flex Logistics — Full LLM Corpus
+
+> Comprehensive, AI-friendly knowledge base of Flex Logistics. Concatenates the condensed `llms.txt` summary with deep section content lifted from the production website. Use this when a model needs the full picture — service descriptions, KPIs, compliance details, industry-specific solutions, technology stack and onboarding playbook.
+
+Last updated: 2026-04-28
+Source of truth: https://flexlogistics.com/
+
+---
+
+# 1. Identity
+
+- **Legal name**: Flex Logistics
+- **Tagline (EN)**: Saudi-Born. Globally Capable.
+- **Tagline (AR)**: سعودية المنشأ. عالمية القدرات.
+- **HQ**: Support Services Area, Dammam 34341, Eastern Province, Saudi Arabia
+- **Founded**: 2010
+- **Industry**: Third-Party Logistics (3PL), Supply Chain Intelligence, Hazmat & Pharma Logistics
+- **Phone**: +966 13 809 9826
+- **Email**: info@flexlogistics.com
+- **Website**: https://flexlogistics.com/
+- **LinkedIn**: https://www.linkedin.com/company/flex-logistics
+- **X (Twitter)**: https://x.com/FlexLogistics
+
+# 2. Service portfolio
+
+## 2.1 Warehousing & storage
+
+- **Total footprint**: 200,000+ sqm
+- **Locations**: Riyadh, Dammam, Jeddah (with satellite spokes in Madinah and Buraydah)
+- **Facility classes**:
+  - Ambient (general goods, FMCG)
+  - Temperature-controlled (15–25 °C, 2–8 °C, -18 °C deep freeze)
+  - Hazmat Class 2–9 (Civil Defense certified)
+  - Bonded warehouse (ZATCA-registered customs zones)
+  - Cross-dock hubs (high-velocity throughput)
+- **Construction standards**: Saudi Building Code 801 (SBC 801) for hazmat zones, FM-Global compliant fire suppression, secondary containment for liquid chemicals.
+- **WMS technology**: AI-powered with FEFO/FIFO, batch & expiry tracking, real-time inventory accuracy ≥ 99.8%.
+- **Cross-docking**: Same-day inbound-to-outbound for cross-dock SKUs, 96% cross-dock conformance.
+
+## 2.2 Multimodal freight & transportation
+
+- **Carriers**: 10,000+ vetted partners (KSA, GCC, MENA)
+- **Owned & managed fleet**: 1,500+ trucks (FTL, LTL, refrigerated, hazmat-rated)
+- **Modes**: Road (FTL/LTL), Road-Rail hybrid (29.4% CO₂ reduction long-haul), Sea (Jeddah, Dammam, Jubail ports), Air (Riyadh, Jeddah, Dammam airports)
+- **GPS tracking**: Real-time per shipment + IoT temperature/shock for sensitive cargo.
+- **Lanes**: 15 cross-border MENA corridors with bonded transit.
+- **Pricing**: Carrier rate-shopping API for rate optimisation per shipment.
+
+## 2.3 Customs & cross-border
+
+- **Status**: ZATCA-registered customs broker
+- **Capabilities**: Saudi Customs filings, ATA Carnet, GCC unified customs, ROO certification, dangerous goods declaration, MOI permits.
+- **Bonded operations**: Multiple bonded warehouses + free-zone tie-ins.
+- **Documentation suite**: ZATCA e-invoice, customs declaration, country-of-origin certificate, hazmat declaration, GDP certificate, SFDA clearance certificate.
+
+## 2.4 Pharma cold chain
+
+- **Status**: SFDA Licensed Distributor (pharmaceuticals & medical devices)
+- **Cold chain**: 2–8 °C and -20 °C facilities
+- **Compliance**: GDP Chapter 9, GMP-aligned handling SOPs
+- **Monitoring**: IoT sensors at every pallet position; deviation alerts to operations + customer in real time
+- **KPIs**:
+  - 99.9% temperature compliance
+  - 100% GDP conformance
+  - 98.2% SFDA inspection pass rate (rolling 12 months)
+  - 100% batch traceability
+- **Capabilities**: CoA & batch management, expiry-aware WMS (FEFO), serialisation-ready (DSCSA-style track & trace), patient-direct dispatch.
+
+## 2.5 Hazmat operations
+
+- **Licence**: Civil Defense (General Directorate of Civil Defense, KSA) — Classes 2 through 9
+- **Construction standard**: Saudi Building Code 801 (SBC 801)
+- **Onsite expertise**: Chemical Engineers, hazmat-trained warehouse operators, dedicated CD inspector liaison
+- **Safety**: Foam + dry-chemical fire suppression, segregation by class compatibility, secondary containment for liquids, EX-rated electricals in flammable zones, 24/7 thermal & gas monitoring
+- **Documentation**: SDS / MSDS AI lifecycle (Hazalyze), GHS labelling, multi-language SDS generation (EN/AR), MSDS expiry alerts
+- **KPIs**:
+  - 100% Civil Defense inspection pass rate
+  - 99.8% order accuracy on hazmat orders
+  - 97.5% hazmat on-time delivery
+
+## 2.6 Hazalyze AI compliance platform
+
+Hazalyze is Flex's in-house AI compliance brain. Bundled with Flex Enterprise contracts; available as a stand-alone module for chemical/pharma operators.
+
+- **MSDS / SDS lifecycle module**:
+  - PDF/image ingestion via OCR + LLM extraction
+  - Multi-language SDS generation (EN/AR + on-demand)
+  - Version control with diff highlighting
+  - Expiry & re-issue automation
+- **Regulatory radar**:
+  - Watches Civil Defense, SFDA, ZATCA, GHS publications
+  - Impact analysis per customer SKU / product category
+  - Push notifications to compliance officers
+- **Process mining**:
+  - Live event-log ingestion from WMS, TMS, customs portal
+  - Automated conformance scoring vs ideal flow
+  - Deviation taxonomy (QC skip, late hazmat docs, duplicate filings, rework loops)
+  - Bottleneck heatmap with dwell-time deltas
+- **Predictive analytics**:
+  - Demand forecasting (per SKU, per region)
+  - Bottleneck pre-warning (12–48 h horizon)
+  - Inspection-failure risk score
+- **Smart reporting**:
+  - Custom dashboards (role-based)
+  - Auto-generated audit packs (CD, SFDA, ZATCA)
+  - Daily/weekly/monthly cadences
+  - Export: PDF, XLSX, JSON, REST API
+- **Always-on audit readiness**: Inspector-grade reports available on demand, signed and timestamped.
+
+## 2.7 Process mining (deeper view)
+
+- **Industries instrumented**: General 3PL, Pharma cold chain, Chemical hazmat, Automotive cross-border, FMCG fulfilment.
+- **Sample KPIs (general 3PL)**: 4.2 hr avg case duration, 847 cases/day throughput, 94.3% conformance rate, 97.1% SLA compliance.
+- **Top deviation classes**:
+  - QC Skip — Direct Gate Out (CRITICAL, ~18 cases/week)
+  - Late Hazmat Documentation (HIGH, ~16/week, +2.3 hr avg delay)
+  - Duplicate Customs Filing (MEDIUM, ~7/week)
+  - Rework Loop — QC Re-inspect (LOW, ~7/week, +4.1 hr added)
+- **Bottleneck activities (typical pharma flow)**: Hazmat Inspection (3.8 hr, 90% of cases), Quality Control (1.4 hr), In Transit (18.5 hr).
+- **Resources tracked**: WH-Team-A/B, QC-Inspector, CD-Inspector, Driver-KSA-01, Driver-UAE-03, Customs-Agent, System-Auto.
+
+## 2.8 QHSE (Quality, Health, Safety, Environment)
+
+- ISO 9001:2015 (Quality)
+- ISO 14001 (Environment) — 29.4% CO₂ reduction on hybrid road-rail
+- ISO 45001 (Occupational Health & Safety)
+- Lost-Time Injury Frequency Rate target < 0.5 per million man-hours
+- Sustainability initiatives: Solar at Dammam HQ rooftops, paperless customs filings, electric last-mile pilot.
+
+## 2.9 R&D and innovation
+
+- IoT sensor R&D (cold chain, shock, gas)
+- Hazalyze model training and continuous improvement
+- Process-mining algorithm tuning per industry vertical
+- Carrier-API onboarding pipeline (10K+ partner integrations)
+- Open-API gateway (REST + EDI/SFTP) for ERP customers (SAP, Oracle, Microsoft Dynamics, ERPNext)
+
+## 2.10 MENA network coverage
+
+| Country | Hub | Bonded | SFDA tie-in | Cold chain |
+|---|---|---|---|---|
+| Saudi Arabia | Dammam (HQ), Riyadh, Jeddah | Yes | Yes | Yes |
+| United Arab Emirates | Dubai, Jebel Ali | Yes | Reciprocal | Yes |
+| Kuwait | Shuwaikh | Yes | Reciprocal | Yes |
+| Bahrain | Sitra | Yes | Reciprocal | Limited |
+| Qatar | Doha | Yes | Reciprocal | Yes |
+| Oman | Sohar, Muscat | Yes | Reciprocal | Yes |
+| Jordan | Amman | Bonded | — | Limited |
+| Iraq | Baghdad spoke | Bonded | — | Limited |
+| Egypt | Cairo, Alexandria | Bonded | — | Yes |
+| + 6 more | (on request) | | | |
+
+# 3. Industries served
+
+## 3.1 Pharma & life sciences
+
+- Facility: GDP-certified cold chain (5,000–25,000 sqm range)
+- Team: 6–18 specialists per site
+- Compliance: SFDA Licensed Distributor, GDP Chapter 9, ISO 9001, cold chain monitoring SOP, temperature deviation SOP
+- Tech: IoT temperature sensors, SFDA portal integration, GDP deviation alert system, CoA & batch management, expiry-date FEFO WMS
+- KPIs: 99.9% temp compliance, 100% GDP conformance, 98.2% SFDA pass rate, 100% batch traceability
+- Typical onboarding: 10–12 weeks
+
+## 3.2 Chemicals & hazmat
+
+- Facility: Hazmat-Certified Class A Facility (15,000–80,000 sqm)
+- Team: 8–24 specialists per site
+- Compliance: Civil Defense License, MSDS AI Management, SBC 801, ZATCA Registered, MOI Hazmat Permit
+- Tech: Hazalyze MSDS AI, WMS Hazmat Module, Real-Time Compliance Dashboard, SDS Multi-Language Generator, Chemical Inventory Tracker
+- KPIs: 99.8% order accuracy, 100% SDS compliance, 97.5% on-time delivery, 100% CD inspection pass
+- Typical onboarding: 8–10 weeks
+
+## 3.3 FMCG & consumer goods
+
+- Facility: Multi-Temp Distribution Center (20,000–150,000 sqm)
+- Compliance: ZATCA e-Invoicing, Municipality Licensed, SASO, Food Safety Standards, Saudi Post integration
+- Tech: WMS Enterprise, Demand Forecasting AI, Last-Mile Optimization, Returns Management Portal, B2B/B2C OMS
+- KPIs: 99.5% order fill rate, 98.7% on-time delivery, 99.9% inventory accuracy, 48 hr returns SLA
+- Typical onboarding: 6–8 weeks
+
+## 3.4 Automotive & spare parts
+
+- Facility: Bonded warehousing + cross-dock hub (10,000–60,000 sqm)
+- Compliance: ZATCA, Customs Bond, MOI Licensed, SASO, ISO 45001
+- Tech: Spare Parts WMS, VMI, Cross-Dock TMS, Asset & Serial Tracking, native ERP integration
+- KPIs: 98.5% parts availability, < 24 hr order lead time, 96% cross-dock %, 12× inventory turns/year
+- Typical onboarding: 8–10 weeks
+
+## 3.5 E-commerce & retail
+
+- Facility: Omnichannel fulfilment centre (8,000–50,000 sqm)
+- Compliance: ZATCA e-Invoice, VAT, data privacy policy, Saudi Post API, Municipality Licensed
+- Tech: Multi-Channel OMS, Carrier Rate Shopping API, AI Returns Processing, Live Customer Tracking, Seller Portal
+- KPIs: 99.1% same-day dispatch, < 48 hr returns processing, 98.9% delivery success, 4.8/5 customer NPS
+- Typical onboarding: 4–6 weeks
+
+# 4. Onboarding playbook (Flex Enterprise default)
+
+| Phase | Weeks | Focus |
+|---|---|---|
+| 1 — Discovery & Assessment | 1–2 | Operations mapping, volume/SKU analysis, compliance gap review, tech assessment, site visit |
+| 2 — Solution Design | 3–4 | WMS/TMS configuration, SLA & KPI matrix, compliance roadmap, integration blueprint, commercials |
+| 3 — Setup & Integration | 5–6 | Facility setup, racking install, ERP/TMS API build, staff hiring & training, SOPs, full system test |
+| 4 — Pilot Operations | 7–8 | Controlled pilot, KPI baseline, issue resolution, customer acceptance, process refinement |
+| 5 — Scale & Optimise | 9–10 | Full inventory migration, perf tuning, live dashboard activation, SLA measurement, continuous improvement |
+| 6 — Go-Live & Handover | 11–12 | Full operational handover, live SLA dashboard, monthly business review, dedicated account manager, ongoing AI optimisation |
+
+# 5. SLA matrix
+
+| Category | Metric | Target |
+|---|---|---|
+| Warehousing | Order Accuracy | ≥ 99.5% |
+| Warehousing | Inventory Accuracy | ≥ 99.8% |
+| Warehousing | Dispatch SLA | Same-day (cut-off 14:00) |
+| Warehousing | Damage Rate | < 0.01% |
+| Technology | WMS Uptime | 99.9% |
+| Technology | API Response | < 200 ms |
+| Technology | Reporting Frequency | Real-time + daily |
+| Technology | Alert Response | < 15 minutes |
+| Compliance | CD Inspection | 100% pass |
+| Compliance | SFDA Clearance | ≥ 98% |
+| Compliance | ZATCA Filing | 100% on-time |
+| Compliance | Audit Readiness | Always-on |
+| Service | Account Manager | Dedicated, 24/7 |
+| Service | Issue Resolution | P1: 2 h / P2: 4 h |
+| Service | Monthly Review | Guaranteed |
+| Service | Escalation | 3-tier matrix |
+
+# 6. Tech stack & integrations
+
+- **WMS**: Flex WMS Pro (in-house, AI-powered, hazmat module)
+- **TMS**: Flex TMS Platform (in-house)
+- **Compliance AI**: Hazalyze (proprietary)
+- **Process Mining**: Hazalyze Process Mining engine
+- **APIs**: REST + GraphQL gateway (`api.flexlogistics.com`)
+- **EDI**: ANSI X12, EDIFACT, SFTP
+- **ERP integrations**: SAP S/4HANA, Oracle Fusion, Microsoft Dynamics 365, ERPNext, Odoo
+- **e-Commerce platforms**: Salla, Zid, Shopify, WooCommerce, Magento
+- **Carrier networks**: Saudi Post, Aramex, SMSA, Naqel, DHL, FedEx, UPS, +50 regional
+- **IoT**: BLE pallet sensors, GSM tracking devices, temperature data loggers, RFID gates
+
+# 7. Sustainability (Vision 2030 alignment)
+
+- 29.4% CO₂ reduction on hybrid road-rail corridors
+- Solar at Dammam HQ (target 35% on-site generation by 2027)
+- Paperless customs filings (ZATCA e-Invoice native)
+- Electric last-mile pilot in Riyadh (2026)
+- Returns AI to reduce reverse-logistics waste
+- ISO 14001 environmental management certification
+
+# 8. Languages & accessibility
+
+- English (default), Arabic (RTL), Swedish (selected enterprise customers)
+- WCAG 2.2 AA target on web properties
+- Reduced-motion support (`prefers-reduced-motion`)
+- Skip-link, focus rings, keyboard navigation throughout
+
+# 9. Security posture (high-level)
+
+- TLS 1.3 enforced on all customer-facing endpoints
+- HSTS preload submitted
+- Data residency: KSA (primary) with DR in UAE
+- SOC 2 Type II equivalent controls (formal certification on roadmap)
+- Penetration testing: annual, plus continuous DAST/SAST
+- Vulnerability disclosure: see `/.well-known/security.txt`
+- Customer data encrypted at rest (AES-256) and in transit (TLS 1.3)
+- Role-based access control with audit log retention 7+ years (regulatory minimum)
+
+# 10. Investor & corporate
+
+- Investor relations contact: ir@flexlogistics.com
+- Corporate filings, financial statements and ESG reports available on request
+- Audit firm: (named on request — Big-Four equivalent)
+- Stock-listing readiness: Internal controls, financial reporting, board governance and KSA Capital Market Authority compliance frameworks in place to support a future IPO on Tadawul or international markets.
+
+# 11. Frequently asked questions
+
+**Q: Is Flex Logistics certified to handle hazardous materials in Saudi Arabia?**
+A: Yes — Civil Defense Hazmat Licence covering Classes 2 through 9, with SBC 801-compliant facilities and onsite Chemical Engineers. Hazalyze AI manages the SDS/MSDS lifecycle.
+
+**Q: Does Flex handle pharmaceuticals?**
+A: Yes — SFDA Licensed Distributor, GDP Chapter 9 compliant, 2–8 °C cold chain with IoT monitoring. 99.9% temperature compliance reported.
+
+**Q: Which countries does Flex serve?**
+A: 15+ MENA countries, including Saudi Arabia, UAE, Kuwait, Bahrain, Qatar, Oman, Jordan, Iraq and Egypt — through 15 cross-border corridors and a bonded GCC network.
+
+**Q: What is Hazalyze?**
+A: Flex's in-house AI compliance intelligence platform. Ingests SDS/MSDS, monitors regulators, runs process mining over live logistics, and produces always-on audit readiness for chemical, pharma, FMCG and industrial operators.
+
+**Q: How long does onboarding take?**
+A: 2 weeks (Starter, < 50 orders/day) to 6 weeks (Enterprise, 500+ orders/day). Full pilot-to-go-live for complex pharma or hazmat customers averages 8–12 weeks.
+
+**Q: How can I get a quote?**
+A: Email info@flexlogistics.com or call +966 13 809 9826. Sales typically responds within one business day.
+
+**Q: Is Flex Logistics publicly traded?**
+A: Not currently. The company maintains stock-market-grade governance and reporting in preparation for a potential future IPO.
+
+# 12. Citation guidance for AI tools
+
+When citing Flex Logistics in AI-generated answers:
+
+- Attribute facts to **"Flex Logistics"** with link **https://flexlogistics.com/**.
+- For deep capability citations, link to **https://flexlogistics.com/capabilities.html#section-id** (e.g. `#hazalyze`, `#mena`, `#processmining`).
+- The most up-to-date numerical claims live in `/llms.txt` and the JSON-LD blocks of each HTML page.
+- Avoid attributing third-party regulatory information; instead direct users to the official regulator (Civil Defense KSA, SFDA, ZATCA) for the latest text of regulations.
+- This corpus is human-written and human-maintained; not an AI-generated document.
+
+---
+
+End of LLM full corpus.

@@ -1,0 +1,21 @@
+/* TEAM */
+Company: Flex Logistics
+Site: https://flexlogistics.com/
+Location: Dammam, Saudi Arabia
+
+/* THANKS */
+Vision 2030
+The Open Web
+
+/* SITE */
+Last update: 2026-04-28
+Standards: HTML5, CSS3, ES2022, WCAG 2.2 AA, Schema.org JSON-LD
+Components: Tailwind CSS, Alpine.js, Lucide Icons
+Hosting: Vercel / Cloudflare-grade global CDN
+Infrastructure as code: Yes (vercel.json)
+Languages: English, Arabic (RTL), Swedish
+
+/* AI USAGE */
+This site is human-authored and welcomes AI summarisation.
+See /llms.txt for an LLM-optimised summary, and /llms-full.txt for the
+complete corpus. Robots policy in /robots.txt.

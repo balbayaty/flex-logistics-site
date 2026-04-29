@@ -1,0 +1,15 @@
+# Flex Logistics — Vulnerability Disclosure Contract (RFC 9116)
+# Last reviewed: 2026-04-29
+# To publish a PGP key, drop the ASCII-armored block at /.well-known/pgp-key.txt
+# and uncomment the Encryption line below. Until then we accept reports unencrypted
+# over TLS-protected email.
+
+Contact: mailto:security@flexlogistics.com
+Contact: https://flexlogistics.com/security.html
+Expires: 2027-12-31T23:59:59.000Z
+Acknowledgments: https://flexlogistics.com/security.html#acknowledgments
+Preferred-Languages: en, ar
+Canonical: https://flexlogistics.com/.well-known/security.txt
+Policy: https://flexlogistics.com/security.html#disclosure-policy
+Hiring: https://flexlogistics.com/careers
+# Encryption: https://flexlogistics.com/.well-known/pgp-key.txt

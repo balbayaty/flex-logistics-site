@@ -1,0 +1,32 @@
+    <style>
+        [x-cloak] { display: none !important; }
+        html { scroll-behavior: smooth; }
+        ::-webkit-scrollbar { width: 8px; height: 8px; }
+        ::-webkit-scrollbar-track { background: #080C14; }
+        ::-webkit-scrollbar-thumb { background: #F6A000; border-radius: 4px; }
+
+        body { background: #080C14; color: #fff; font-family: 'Outfit', 'IBM Plex Sans Arabic', sans-serif; -webkit-font-smoothing: antialiased; }
+        .glass-cyber { background: rgba(15, 23, 42, 0.7); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); border: 1px solid rgba(255, 255, 255, 0.05); }
+        .text-huge { font-size: clamp(2.5rem, 5.5vw, 5rem); line-height: 1.05; font-weight: 900; letter-spacing: -0.025em; }
+        .text-section { font-size: clamp(2rem, 3.8vw, 3.25rem); line-height: 1.1; font-weight: 900; letter-spacing: -0.02em; }
+        .brand-glow { box-shadow: 0 0 30px rgba(246, 160, 0, 0.18); }
+        .orange-text-gradient { background: linear-gradient(to right, #F6A000, #FFD074); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; color: transparent; }
+        [lang='ar'] h1, [lang='ar'] h2, [lang='ar'] h3, [lang='ar'] h4 { font-family: 'IBM Plex Sans Arabic', sans-serif; font-weight: 700 !important; }
+        .case-study-bg { background: linear-gradient(135deg, #0F172A 0%, #050A15 100%); }
+
+        @keyframes float-slow { 0%, 100% { transform: translateY(0) translateX(0); } 50% { transform: translateY(-12px) translateX(6px); } }
+        .float-slow { animation: float-slow 8s ease-in-out infinite; }
+
+        a:focus-visible, button:focus-visible { outline: 2px solid #F6A000; outline-offset: 3px; border-radius: 6px; }
+
+        /* Print: legal/investor-friendly */
+        @media print {
+            nav, .no-print { display: none !important; }
+            body { background: #fff; color: #000; }
+        }
+
+        /* Reduced motion */
+        @media (prefers-reduced-motion: reduce) {
+            *, *::before, *::after { animation-duration: 0s !important; transition-duration: 0s !important; scroll-behavior: auto !important; }
+        }
+    </style>

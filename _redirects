@@ -1,0 +1,17 @@
+# Netlify / Cloudflare Pages redirects (Vercel uses vercel.json instead)
+/index               /                            301
+/index.html          /                            301
+/home                /                            301
+/capabilities        /capabilities.html           301
+/about               /capabilities.html           301
+/platform            /capabilities.html           301
+/hazalyze            /capabilities.html#hazalyze  301
+/contact             /#contact                    301
+/track               /#track                      301
+/security            /security.html               301
+/privacy             /privacy.html                301
+/terms               /terms.html                  301
+/security.txt        /.well-known/security.txt    301
+/llms                /llms.txt                    200
+/llms-full           /llms-full.txt               200
+/ai.txt              /llms.txt                    200

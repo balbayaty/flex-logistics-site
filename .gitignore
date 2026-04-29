@@ -1,0 +1,24 @@
+# node + tooling
+node_modules/
+.lighthouse.html
+.lighthouseci/
+.cache/
+.parcel-cache/
+.DS_Store
+Thumbs.db
+
+# editor
+.vscode/
+.idea/
+
+# build artefacts (none for static site, but reserved)
+dist/
+build/
+out/
+.vercel/
+.netlify/
+
+# secrets
+.env
+.env.*
+!.env.example

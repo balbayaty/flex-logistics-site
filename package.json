@@ -1,0 +1,24 @@
+{
+  "name": "flex-logistics-site",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Flex Logistics — production marketing + capabilities site. Static, no build step.",
+  "homepage": "https://flexlogistics.com/",
+  "scripts": {
+    "dev": "npx --yes serve@latest -l 8090 .",
+    "preview": "npx --yes serve@latest -l 8090 .",
+    "build:css": "tailwindcss -i ./assets/css/input.css -o ./assets/css/tailwind.css --minify",
+    "watch:css": "tailwindcss -i ./assets/css/input.css -o ./assets/css/tailwind.css --watch",
+    "build:sri": "node ./scripts/compute-sri.mjs",
+    "build": "npm run build:css && npm run build:sri",
+    "validate:html": "npx --yes html-validate@latest \"./*.html\"",
+    "lighthouse": "npx --yes lighthouse@latest http://localhost:8090/ --output=html --output-path=./.lighthouse.html --view"
+  },
+  "license": "UNLICENSED",
+  "engines": {
+    "node": ">=18"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.17"
+  }
+}
