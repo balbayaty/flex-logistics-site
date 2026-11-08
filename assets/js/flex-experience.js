@@ -66,7 +66,7 @@
     closingTitle:"لا تكتف بالتقدم.<br><em>تجاوز الحدود.</em>",
     closingDesc:"أخبرنا عن وجهتك. سنساعدك في تحديد النقاش اللوجستي الأنسب.",
     closingButton:"ابدأ رحلتك التالية",
-    footerLine:"حلول حركة تتشكل حول الإمكانيات.",officialSite:"الموقع الرسمي ↗",contactUs:"تواصل مع فليكس ↗",
+    footerLine:"حلول حركة تتشكل حول الإمكانيات.",officialSite:"الموقع الرسمي",contactUs:"تواصل مع فليكس",
     dialogTitle:"لنصمم خطوتك القادمة.",dialogIntro:"أنشئ ملخص استفسار بسيطاً. يفتح هذا العرض تطبيق البريد لديك، ولا يرسل بياناتك أو يحفظها.",
     fieldLane:"الممر المطلوب",fieldCargo:"طبيعة البضائع",fieldDescription:"ما المطلوب إنجازه؟",
     briefNoticeTitle:"لبداية حوار مهني حقيقي.",briefNoticeDesc:"دون وعود غير مدعومة عن وقت العبور أو المنافذ أو الطاقة التخزينية.",
@@ -129,7 +129,8 @@
     });
     const isArabic=state.lang==="ar";
     root.lang=isArabic?"ar":"en";root.dir=isArabic?"rtl":"ltr";
-    $("#langToggle").innerHTML=isArabic?"English <span class='globe-icon'>↗</span>":"العربية <span class='globe-icon'>↗</span>";
+    const langIcon='<svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 19 19 5M7 5h12v12"/></svg>';
+    $("#langToggle").innerHTML=isArabic?"English <span class='globe-icon'>"+langIcon+"</span>":"العربية <span class='globe-icon'>"+langIcon+"</span>";
     $("#missionDetails").placeholder=isArabic?"اكتب الموقع والوجهة ونوع البضائع والكمية والموعد المطلوب...":"Tell us the origin, destination, cargo volume and required date...";
     renderRoute();
     renderExample();
