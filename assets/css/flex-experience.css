@@ -339,3 +339,11 @@ h1,h2,h3,p{margin-top:0}
 .play-circle svg{width:18px;height:18px}
 .layer-ico svg{width:24px;height:24px}
 .dialog-summary-symbol svg{width:23px;height:23px}
+
+/* Progressive enhancement: a missing or delayed JS controller cannot blank the page. */
+html:not(.js-ready) .reveal{opacity:1;transform:none}
+html.js-ready .hero .reveal:not(.is-visible){opacity:.94;transform:translateY(8px)}
+@media(max-width:740px){
+ .hero-bottom-note{display:none}
+ .hero-copy{padding-bottom:19px}
+}
