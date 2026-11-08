@@ -1,4 +1,4 @@
-# robots.txt for Flex Logistics — https://flexlogistics.com/
+# robots.txt for Flex Logistics — https://scsflex.com/
 # We welcome legitimate search engines and AI/LLM crawlers.
 
 User-agent: *
@@ -80,4 +80,4 @@ User-agent: MJ12bot
 Disallow: /
 
 # Sitemaps
-Sitemap: https://flexlogistics.com/sitemap.xml
+Sitemap: https://scsflex.com/sitemap.xml
