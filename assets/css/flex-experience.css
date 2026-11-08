@@ -310,3 +310,16 @@ h1,h2,h3,p{margin-top:0}
  *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}
  #particles{display:none}.reveal{opacity:1!important;transform:none!important}
 }
+
+/* Animated map's direct route selector */
+.map-quick-routes{position:absolute;top:67px;right:27px;z-index:5;display:flex;gap:5px;flex-wrap:wrap;justify-content:flex-end;max-width:215px}
+.map-quick{font:700 9px var(--mono);letter-spacing:.05em;color:#bbcad9;background:rgba(8,16,25,.89);border:1px solid rgba(190,207,224,.2);padding:8px 9px;border-radius:7px;transition:background .25s,color .25s,border-color .25s,transform .25s}
+.map-quick:hover,.map-quick.is-active{background:#ffa51f;color:#0e1620;border-color:#ffa51f;transform:translateY(-2px)}
+.floating-telemetry{top:auto;bottom:-18px;right:22px}
+[dir="rtl"] .map-quick-routes{right:auto;left:27px}
+@media(max-width:740px){
+ .map-quick-routes{top:43px;right:12px;left:12px;max-width:none;justify-content:center;gap:5px}
+ .map-quick{font-size:8px;padding:6px 9px}
+ .floating-telemetry{display:none}
+ [dir="rtl"] .map-quick-routes{left:12px;right:12px}
+}
