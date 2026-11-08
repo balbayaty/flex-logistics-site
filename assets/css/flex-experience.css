@@ -331,3 +331,11 @@ h1,h2,h3,p{margin-top:0}
  .brand-symbol{width:29px}
  .brand-word strong{font-size:19px}
 }
+
+/* Crisp vector action arrows, independent of mobile font glyph coverage. */
+.arrow-ico,.inline-action-arrow,.route-tab-icon,.globe-icon{display:inline-flex;align-items:center;justify-content:center;flex:none;line-height:1}
+.arrow-ico svg,.inline-action-arrow svg,.route-tab-icon svg{width:18px;height:18px}
+.globe-icon svg{width:12px;height:12px}
+.play-circle svg{width:18px;height:18px}
+.layer-ico svg{width:24px;height:24px}
+.dialog-summary-symbol svg{width:23px;height:23px}
