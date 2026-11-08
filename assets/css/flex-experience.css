@@ -323,3 +323,11 @@ h1,h2,h3,p{margin-top:0}
  .floating-telemetry{display:none}
  [dir="rtl"] .map-quick-routes{left:12px;right:12px}
 }
+
+/* Keep the immersive light/dark theme switch reachable on most phones. */
+@media(min-width:391px) and (max-width:740px){
+ .theme-toggle{display:inline-flex;height:38px;min-width:38px}
+ .nav-wrap{gap:6px}
+ .brand-symbol{width:29px}
+ .brand-word strong{font-size:19px}
+}
