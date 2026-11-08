@@ -15,7 +15,7 @@ const hash = (algorithm, data) => createHash(algorithm).update(data).digest(algo
 const cleaned = [];
 for (const path of ["assets/css/index-overrides.css", "assets/css/capabilities-overrides.css"]) {
   let css = read(path);
-  if (!/^\s*<style(?:\s[^>]*)?>/i.test(css) || !/<\/style>\s*$/i.test(css)) {
+  if (!/^\s*<style(?:\s[^>]*)?>/i.test(css)) {
     throw new Error("Unexpected CSS wrapper format in " + path);
   }
   css = css.replace(/^\s*<style(?:\s[^>]*)?>\s*/i, "").replace(/\s*<\/style>\s*$/i, "").trim() + "\n";
