@@ -152,7 +152,7 @@
                 <div class="route-data"><span data-i18n="routeChecks">CHECKPOINTS TO VERIFY</span><strong id="routeChecks">Documents · importer · slot</strong></div>
                 <div class="route-data"><span data-i18n="routeBackup">RESILIENCE QUESTION</span><strong id="routeBackup">Restrictions and border readiness</strong></div>
               </div>
-              <div class="route-action-row"><button type="button" class="primary-button" data-open-mission><span data-i18n="briefThisLane">Brief this lane</span><span>↗</span></button><span data-i18n="routeFootnote">Operational validation required before dispatch.</span></div>
+              <div class="route-action-row"><button type="button" class="primary-button" data-open-mission><span data-i18n="briefThisLane">Brief this lane</span><span class="arrow-ico" aria-hidden="true"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 19 19 5M7 5h12v12"/></svg></span></button><span data-i18n="routeFootnote">Operational validation required before dispatch.</span></div>
             </div>
             <div class="process-visual"><div class="process-visual-top"><span>CONCEPT / PROCESS LAYERS</span><span class="ticking" aria-hidden="true">◌ ◉ ◌</span></div>
               <div class="process-rail" id="processRail">
@@ -180,9 +180,9 @@
             <div class="interface-eyebrow"><span class="interface-spark">✳</span><span data-i18n="askLabel">ASK YOUR OPERATION</span></div>
             <h3 data-i18n="askTitle">What should we verify before this shipment moves?</h3>
             <div class="question-options">
-              <button type="button" class="question-chip is-selected" data-question="chem" aria-pressed="true"><span data-i18n="questionChem">Chemical storage readiness</span><span>↗</span></button>
-              <button type="button" class="question-chip" data-question="border" aria-pressed="false"><span data-i18n="questionBorder">Cross-border document check</span><span>↗</span></button>
-              <button type="button" class="question-chip" data-question="visibility" aria-pressed="false"><span data-i18n="questionVisibility">Shipment event visibility</span><span>↗</span></button>
+              <button type="button" class="question-chip is-selected" data-question="chem" aria-pressed="true"><span data-i18n="questionChem">Chemical storage readiness</span><span class="arrow-ico" aria-hidden="true"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 19 19 5M7 5h12v12"/></svg></span></button>
+              <button type="button" class="question-chip" data-question="border" aria-pressed="false"><span data-i18n="questionBorder">Cross-border document check</span><span class="arrow-ico" aria-hidden="true"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 19 19 5M7 5h12v12"/></svg></span></button>
+              <button type="button" class="question-chip" data-question="visibility" aria-pressed="false"><span data-i18n="questionVisibility">Shipment event visibility</span><span class="arrow-ico" aria-hidden="true"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 19 19 5M7 5h12v12"/></svg></span></button>
             </div>
             <div class="ai-response"><div class="response-meta"><span class="active-led"></span><span data-i18n="responseConcept">EXAMPLE SYSTEM RESPONSE</span><span>↳</span></div><p id="aiResponse">Begin with the safety data sheet, classification, packaging and storage compatibility. Confirm available approved space and the site-specific acceptance conditions.</p><div class="response-signature"><span>INFERENCE / ILLUSTRATIVE</span><span class="signature-hash">●●●●●●●</span></div></div>
             <div class="interface-footer"><span data-i18n="responseFooter">Human verification remains essential.</span><span>FLEX INTELLIGENCE / 00.1</span></div>
@@ -204,7 +204,7 @@
 
     <section class="closing-section" id="contact">
       <div class="closing-orbit" aria-hidden="true"><span></span><span></span><span></span></div>
-      <div class="shell closing-inner reveal"><div class="closing-eye"><span class="live-dot"></span> <span data-i18n="closingEye">THE NEXT MOVE STARTS HERE</span></div><h2 data-i18n="closingTitle">Don't just move forward.<br><em>Move beyond.</em></h2><p data-i18n="closingDesc">Tell us where you need to go. We will help scope the right logistics conversation.</p><button type="button" class="primary-button xl close-cta" data-open-mission><span data-i18n="closingButton">Start a new mission</span><span>↗</span></button></div>
+      <div class="shell closing-inner reveal"><div class="closing-eye"><span class="live-dot"></span> <span data-i18n="closingEye">THE NEXT MOVE STARTS HERE</span></div><h2 data-i18n="closingTitle">Don't just move forward.<br><em>Move beyond.</em></h2><p data-i18n="closingDesc">Tell us where you need to go. We will help scope the right logistics conversation.</p><button type="button" class="primary-button xl close-cta" data-open-mission><span data-i18n="closingButton">Start a new mission</span><span class="arrow-ico" aria-hidden="true"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 19 19 5M7 5h12v12"/></svg></span></button></div>
       <div class="closing-watermark" aria-hidden="true">FLEX</div>
     </section>
   </main>
@@ -220,7 +220,7 @@
         <label><span data-i18n="fieldCargo">CARGO PROFILE</span><select id="missionCargo" name="cargo"><option value="Industrial goods">Industrial goods</option><option value="Chemicals / SDS review">Chemicals / SDS review</option><option value="FMCG / consumer goods">FMCG / consumer goods</option><option value="Other cargo">Other cargo</option></select></label>
         <label class="full"><span data-i18n="fieldDescription">WHAT NEEDS TO HAPPEN?</span><textarea name="details" id="missionDetails" rows="3" placeholder="Tell us the origin, destination, cargo volume and required date..."></textarea></label>
         <div class="dialog-summary"><div class="dialog-summary-symbol" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 19 19 5M7 5h12v12"/></svg></div><div><strong data-i18n="briefNoticeTitle">Designed for a real conversation.</strong><span data-i18n="briefNoticeDesc">No fabricated transit time, border status or capacity promises.</span></div></div>
-        <button class="primary-button xl full" id="missionSubmit" type="submit"><span data-i18n="prepareEmail">Prepare my enquiry</span><span>↗</span></button>
+        <button class="primary-button xl full" id="missionSubmit" type="submit"><span data-i18n="prepareEmail">Prepare my enquiry</span><span class="arrow-ico" aria-hidden="true"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 19 19 5M7 5h12v12"/></svg></span></button>
         <div class="form-status" id="formStatus" role="status" aria-live="polite"></div>
       </form>
     </div>
