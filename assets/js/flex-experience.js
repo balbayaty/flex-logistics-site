@@ -299,6 +299,7 @@
     });
   }
   function init(){
+    root.classList.add("js-ready");
     const storedLang=readStore("flexx-lang");state.lang=storedLang==="ar"?"ar":"en";
     const storedTheme=readStore("flexx-theme");state.theme=storedTheme==="light"?"light":"dark";
     setTheme(state.theme);setupControls();translate();setupReveals();setupScroll();setupMapPulse();setupParticles();setupMission();
