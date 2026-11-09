@@ -42,3 +42,20 @@ body:not(.js-ready) .appear{opacity:1;transform:none}
 @media(max-width:760px){.service-extensions{margin-top:24px}.extension-links{grid-template-columns:1fr}.extension-links>button{padding:15px 8px;border-left:0;border-bottom:1px solid #d6dcdb}.extension-links>button:last-child{border-bottom:0}}
 /* Tablet containment: prevent industry tiles from widening the viewport. */
 @media(min-width:761px) and (max-width:980px){.domain-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.domain-card{min-width:0}}
+
+/* Official FLEX Logistics Company logo supplied by the brand owner.
+   Preserve the exact orange wordmark and grey "Logistics Company" subtitle.
+   The transparent image must sit on the dark brand-colored backgrounds. */
+.brand{gap:14px;min-width:0}
+.brand-image{display:block;flex:none;width:auto;height:64px;max-width:180px;object-fit:contain;object-position:left center}
+.brand-region{border-inline-start:1px solid rgba(255,255,255,.22);padding-inline-start:14px;color:#aab8c3;font:700 9px/1.45 var(--mono);letter-spacing:.17em;white-space:nowrap}
+.footer-brand{display:inline-flex;align-items:center;letter-spacing:normal;font:inherit;max-width:100%}
+.footer-logo{display:block;width:min(255px,65vw);height:auto;object-fit:contain;object-position:left center}
+@media(max-width:1370px){.brand-region{display:none}}
+@media(max-width:760px){
+  .brand{gap:0}
+  .brand-image{height:52px;max-width:140px}
+  .footer-logo{width:min(230px,70vw)}
+}
+@media(max-width:420px){.brand-image{height:48px;max-width:130px}}
+[dir="rtl"] .brand-image,[dir="rtl"] .footer-logo{object-position:center}
