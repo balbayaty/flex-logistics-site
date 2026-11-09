@@ -5,7 +5,7 @@ const html=read("index.html"),css=read("assets/continuity.css"),js=read("assets/
 assert(html.startsWith("<!doctype html>"));
 assert(html.includes('content="noindex,nofollow,noarchive"'));
 assert(html.includes("DESIGN STUDY"));
-assert(!html.includes('href="#ico-warehouse"'));
+assert(!html.includes('<a href="#ico-warehouse"'),"Navigation must target section, not SVG icon");
 assert(html.includes('href="#warehouse"'));
 assert(!html.includes('FLEX<span>X</span>'));
 assert(html.includes('href="/assets/continuity.css'));
