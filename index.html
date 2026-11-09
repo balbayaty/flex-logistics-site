@@ -1,665 +1,98 @@
-<!DOCTYPE html>
-<html lang="en" x-data="{ lang: 'en', darkMode: true, mobileMenu: false }" :lang="lang" :dir="lang === 'ar' ? 'rtl' : 'ltr'" :class="darkMode ? 'dark' : ''">
+<!doctype html>
+<html lang="en" dir="ltr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="theme-color" content="#080C14" media="(prefers-color-scheme: dark)">
-    <meta name="theme-color" content="#F6A000" media="(prefers-color-scheme: light)">
-    <meta name="color-scheme" content="dark light">
-    <meta name="format-detection" content="telephone=yes,email=yes,address=yes">
-    <meta name="referrer" content="strict-origin-when-cross-origin">
-
-    <!-- ================= PRIMARY SEO ================= -->
-    <title>Flex Logistics | Saudi-Born 3PL — Hazmat, Pharma Cold Chain & AI-Powered Supply Chain Across MENA</title>
-    <meta name="description" content="Flex Logistics is a Saudi-born 3PL leader: 200,000+ sqm of Civil Defense-certified hazmat warehousing, SFDA-licensed pharma cold chain, ZATCA-compliant customs, 10,000+ vetted carriers across 15 MENA countries — all orchestrated by Hazalyze AI compliance intelligence.">
-    <meta name="keywords" content="Flex Logistics, 3PL Saudi Arabia, hazmat logistics KSA, SFDA pharma cold chain, MENA supply chain, customs clearance GCC, ZATCA compliant 3PL, Civil Defense hazmat warehouse Riyadh Dammam Jeddah, Hazalyze AI compliance, MSDS management, process mining logistics, multimodal freight Saudi, cross-border GCC freight, warehouse management Saudi Arabia, cold chain pharma Riyadh, third party logistics MENA">
-    <meta name="author" content="Flex Logistics">
-    <meta name="publisher" content="Flex Logistics">
-    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
-    <meta name="googlebot" content="index, follow">
-    <meta name="bingbot" content="index, follow">
-    <meta name="rating" content="general">
-    <meta name="distribution" content="global">
-    <meta name="revisit-after" content="7 days">
-    <meta name="geo.region" content="SA-04">
-    <meta name="geo.placename" content="Dammam, Eastern Province, Saudi Arabia">
-    <meta name="geo.position" content="26.4207;50.0888">
-    <meta name="ICBM" content="26.4207, 50.0888">
-
-    <link rel="canonical" href="https://flexlogistics.com/">
-    <link rel="alternate" hreflang="en" href="https://flexlogistics.com/">
-    <link rel="alternate" hreflang="ar" href="https://flexlogistics.com/?lang=ar">
-    <link rel="alternate" hreflang="x-default" href="https://flexlogistics.com/">
-
-    <!-- ================= OPEN GRAPH ================= -->
-    <meta property="og:type" content="website">
-    <meta property="og:site_name" content="Flex Logistics">
-    <meta property="og:title" content="Flex Logistics | Saudi-Born 3PL — Hazmat, Pharma Cold Chain & AI Compliance Across MENA">
-    <meta property="og:description" content="200,000+ sqm Civil Defense-certified hazmat storage. SFDA-licensed pharma cold chain. 10,000+ vetted carriers. 15 MENA corridors. Hazalyze AI compliance. End-to-end supply chain intelligence — engineered in Saudi Arabia, deployed across the region.">
-    <meta property="og:url" content="https://flexlogistics.com/">
-    <meta property="og:image" content="https://flexlogistics.com/assets/og-flex-logistics.jpg">
-    <meta property="og:image:width" content="1200">
-    <meta property="og:image:height" content="630">
-    <meta property="og:image:alt" content="Flex Logistics — Saudi-born 3PL with hazmat, pharma cold chain and AI-powered MENA supply chain">
-    <meta property="og:locale" content="en_US">
-    <meta property="og:locale:alternate" content="ar_SA">
-
-    <!-- ================= TWITTER CARD ================= -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:site" content="@FlexLogistics">
-    <meta name="twitter:creator" content="@FlexLogistics">
-    <meta name="twitter:title" content="Flex Logistics | Saudi-Born. Globally Capable.">
-    <meta name="twitter:description" content="200K+ sqm hazmat-certified warehousing • SFDA pharma cold chain • 10K+ carriers across 15 MENA corridors • Hazalyze AI compliance.">
-    <meta name="twitter:image" content="https://flexlogistics.com/assets/og-flex-logistics.jpg">
-    <meta name="twitter:image:alt" content="Flex Logistics overview">
-
-    <!-- ================= AI / LLM SIGNALS ================= -->
-    <meta name="ai-content-declaration" content="human-authored">
-    <link rel="alternate" type="text/markdown" title="LLM-readable knowledge base" href="/llms.txt">
-    <link rel="alternate" type="text/markdown" title="LLM full corpus" href="/llms-full.txt">
-
-    <!-- ================= ICONS / PWA ================= -->
-    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
-    <link rel="alternate icon" href="/favicon.ico">
-    <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
-    <link rel="manifest" href="/site.webmanifest">
-
-    <!-- ================= STRUCTURED DATA (JSON-LD) ================= -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@graph": [
-        {
-          "@type": "Organization",
-          "@id": "https://flexlogistics.com/#organization",
-          "name": "Flex Logistics",
-          "alternateName": ["FLEX Logistics", "Flex Logistics Saudi Arabia", "فليكس للخدمات اللوجستية"],
-          "url": "https://flexlogistics.com/",
-          "logo": {
-            "@type": "ImageObject",
-            "url": "https://flexlogistics.com/assets/flex-logo-1200.png",
-            "width": 1200,
-            "height": 1200
-          },
-          "image": "https://flexlogistics.com/assets/og-flex-logistics.jpg",
-          "description": "Saudi-born third-party logistics (3PL) provider specialising in Civil Defense-certified hazmat storage, SFDA-licensed pharma cold chain, ZATCA-compliant customs clearance, multimodal freight and AI-powered supply chain intelligence (Hazalyze) across 15+ MENA countries.",
-          "foundingDate": "2010",
-          "foundingLocation": {
-            "@type": "Place",
-            "address": {
-              "@type": "PostalAddress",
-              "addressCountry": "SA",
-              "addressRegion": "Eastern Province",
-              "addressLocality": "Dammam"
-            }
-          },
-          "address": {
-            "@type": "PostalAddress",
-            "streetAddress": "Support Services Area",
-            "addressLocality": "Dammam",
-            "postalCode": "34341",
-            "addressRegion": "Eastern Province",
-            "addressCountry": "SA"
-          },
-          "geo": {
-            "@type": "GeoCoordinates",
-            "latitude": 26.4207,
-            "longitude": 50.0888
-          },
-          "contactPoint": [
-            {
-              "@type": "ContactPoint",
-              "telephone": "+966-13-809-9826",
-              "contactType": "customer service",
-              "areaServed": ["SA","AE","KW","BH","QA","OM","JO","IQ","EG"],
-              "availableLanguage": ["English","Arabic"]
-            },
-            {
-              "@type": "ContactPoint",
-              "email": "info@flexlogistics.com",
-              "contactType": "sales",
-              "areaServed": "MENA",
-              "availableLanguage": ["English","Arabic"]
-            }
-          ],
-          "sameAs": [
-            "https://www.linkedin.com/company/flex-logistics",
-            "https://x.com/FlexLogistics"
-          ],
-          "areaServed": [
-            { "@type": "Country", "name": "Saudi Arabia" },
-            { "@type": "Country", "name": "United Arab Emirates" },
-            { "@type": "Country", "name": "Kuwait" },
-            { "@type": "Country", "name": "Bahrain" },
-            { "@type": "Country", "name": "Qatar" },
-            { "@type": "Country", "name": "Oman" },
-            { "@type": "Country", "name": "Jordan" },
-            { "@type": "Country", "name": "Iraq" },
-            { "@type": "Country", "name": "Egypt" }
-          ],
-          "knowsAbout": [
-            "Hazardous materials logistics (Class 2-9)",
-            "Civil Defense Hazmat Certification (Saudi Arabia)",
-            "SFDA pharmaceutical cold chain (2-8°C)",
-            "GDP (Good Distribution Practice)",
-            "ZATCA customs and VAT compliance",
-            "Saudi Building Code 801 (SBC 801)",
-            "MSDS / SDS compliance",
-            "Multimodal freight (road, rail, sea, air)",
-            "Process mining for logistics",
-            "AI-powered compliance intelligence",
-            "GCC cross-border customs clearance",
-            "Warehouse management systems (WMS)",
-            "Transport management systems (TMS)"
-          ],
-          "hasCredential": [
-            { "@type": "EducationalOccupationalCredential", "name": "Civil Defense Hazmat License (Classes 2-9)", "credentialCategory": "license", "recognizedBy": { "@type": "Organization", "name": "General Directorate of Civil Defense, Saudi Arabia" } },
-            { "@type": "EducationalOccupationalCredential", "name": "SFDA Licensed Pharmaceutical Distributor", "credentialCategory": "license", "recognizedBy": { "@type": "Organization", "name": "Saudi Food and Drug Authority" } },
-            { "@type": "EducationalOccupationalCredential", "name": "ZATCA Registered", "credentialCategory": "registration", "recognizedBy": { "@type": "Organization", "name": "Zakat, Tax and Customs Authority" } },
-            { "@type": "EducationalOccupationalCredential", "name": "ISO 9001:2015 Quality Management" },
-            { "@type": "EducationalOccupationalCredential", "name": "ISO 14001 Environmental Management" },
-            { "@type": "EducationalOccupationalCredential", "name": "ISO 45001 Occupational Health & Safety" }
-          ]
-        },
-        {
-          "@type": "LocalBusiness",
-          "@id": "https://flexlogistics.com/#localbusiness",
-          "name": "Flex Logistics — Dammam Headquarters",
-          "image": "https://flexlogistics.com/assets/og-flex-logistics.jpg",
-          "telephone": "+966-13-809-9826",
-          "email": "info@flexlogistics.com",
-          "url": "https://flexlogistics.com/",
-          "priceRange": "$$$",
-          "openingHoursSpecification": [
-            { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Sunday","Monday","Tuesday","Wednesday","Thursday"], "opens": "08:00", "closes": "18:00" }
-          ],
-          "address": {
-            "@type": "PostalAddress",
-            "streetAddress": "Support Services Area",
-            "addressLocality": "Dammam",
-            "postalCode": "34341",
-            "addressCountry": "SA"
-          },
-          "geo": { "@type": "GeoCoordinates", "latitude": 26.4207, "longitude": 50.0888 }
-        },
-        {
-          "@type": "WebSite",
-          "@id": "https://flexlogistics.com/#website",
-          "url": "https://flexlogistics.com/",
-          "name": "Flex Logistics",
-          "publisher": { "@id": "https://flexlogistics.com/#organization" },
-          "inLanguage": ["en", "ar"],
-          "potentialAction": [
-            {
-              "@type": "SearchAction",
-              "target": { "@type": "EntryPoint", "urlTemplate": "https://flexlogistics.com/capabilities.html#{search_term_string}" },
-              "query-input": "required name=search_term_string"
-            },
-            {
-              "@type": "TrackAction",
-              "target": "https://flexlogistics.com/#track",
-              "object": { "@type": "ParcelDelivery", "trackingNumber": "{tracking_id}" }
-            }
-          ]
-        },
-        {
-          "@type": "Service",
-          "@id": "https://flexlogistics.com/#service-warehousing",
-          "serviceType": "Warehousing & Hazmat Storage",
-          "provider": { "@id": "https://flexlogistics.com/#organization" },
-          "areaServed": { "@type": "Country", "name": "Saudi Arabia" },
-          "description": "Over 200,000 sqm of ambient, temperature-controlled and Civil Defense Class 2-9 hazmat-certified storage across Riyadh, Dammam and Jeddah.",
-          "category": "Third-Party Logistics"
-        },
-        {
-          "@type": "Service",
-          "@id": "https://flexlogistics.com/#service-pharma",
-          "serviceType": "Pharmaceutical Cold Chain",
-          "provider": { "@id": "https://flexlogistics.com/#organization" },
-          "areaServed": { "@type": "Country", "name": "Saudi Arabia" },
-          "description": "SFDA-licensed, GDP-compliant 2-8°C cold chain with IoT temperature monitoring and 99.9% temperature compliance.",
-          "category": "Pharmaceutical Logistics"
-        },
-        {
-          "@type": "Service",
-          "@id": "https://flexlogistics.com/#service-customs",
-          "serviceType": "Customs Clearance & Cross-Border",
-          "provider": { "@id": "https://flexlogistics.com/#organization" },
-          "areaServed": { "@type": "Place", "name": "MENA — 15 corridors" },
-          "description": "ZATCA-registered customs brokerage, GCC bonded warehousing and 15 cross-border MENA corridors with 10,000+ vetted carriers.",
-          "category": "Customs Brokerage"
-        },
-        {
-          "@type": "SoftwareApplication",
-          "@id": "https://flexlogistics.com/#hazalyze",
-          "name": "Hazalyze",
-          "applicationCategory": "BusinessApplication",
-          "operatingSystem": "Web",
-          "description": "AI-powered compliance intelligence platform: ingests SDS / MSDS, monitors regulatory changes (Civil Defense, SFDA, ZATCA, GHS), runs process mining on logistics flows and produces always-on audit readiness.",
-          "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD", "availability": "https://schema.org/InStock", "description": "Bundled with Flex Enterprise contracts" },
-          "creator": { "@id": "https://flexlogistics.com/#organization" }
-        },
-        {
-          "@type": "FAQPage",
-          "mainEntity": [
-            { "@type": "Question", "name": "What is Flex Logistics?", "acceptedAnswer": { "@type": "Answer", "text": "Flex Logistics is a Saudi-born third-party logistics (3PL) provider headquartered in Dammam, KSA. It operates 200,000+ sqm of warehousing (including Civil Defense-certified hazmat and SFDA-licensed pharma cold chain), a network of 10,000+ vetted carriers, and the Hazalyze AI compliance platform — serving 15+ MENA countries." } },
-            { "@type": "Question", "name": "Is Flex Logistics certified to handle hazardous materials in Saudi Arabia?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Flex holds Civil Defense licensing for hazmat Classes 2 through 9, complies with Saudi Building Code 801 (SBC 801), and runs MSDS/SDS lifecycle management through the Hazalyze AI platform." } },
-            { "@type": "Question", "name": "Does Flex Logistics handle pharmaceuticals?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Flex is SFDA-licensed, operates GDP-compliant 2-8°C cold chain facilities with IoT temperature monitoring, and reports 99.9% temperature compliance and 100% GDP conformance." } },
-            { "@type": "Question", "name": "Which countries does Flex Logistics serve?", "acceptedAnswer": { "@type": "Answer", "text": "Flex serves 15+ MENA countries including Saudi Arabia, the UAE, Kuwait, Bahrain, Qatar, Oman, Jordan, Iraq and Egypt — through 15 cross-border corridors and a bonded GCC network." } },
-            { "@type": "Question", "name": "What is Hazalyze?", "acceptedAnswer": { "@type": "Answer", "text": "Hazalyze is Flex's proprietary AI compliance intelligence platform. It ingests SDS/MSDS documents, monitors Civil Defense, SFDA and ZATCA regulatory changes, runs process mining on live logistics flows and produces always-on audit readiness for chemical, pharma, FMCG and industrial operators." } },
-            { "@type": "Question", "name": "How can I get a quote or onboard with Flex?", "acceptedAnswer": { "@type": "Answer", "text": "Email info@flexlogistics.com or call +966 13 809 9826. Onboarding ranges from 2 weeks (Starter) to 6 weeks (Enterprise) depending on volume and certification scope." } }
-          ]
-        },
-        {
-          "@type": "BreadcrumbList",
-          "itemListElement": [
-            { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://flexlogistics.com/" }
-          ]
-        }
-      ]
-    }
-    </script>
-
-    <!-- ================= PRELOAD CRITICAL ================= -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <!-- ================= STYLES (self-hosted, SRI-pinned) ================= -->
-    <link rel="stylesheet" href="/assets/css/tailwind.css" integrity="sha384-AGJosA8/RlphB4mcIx3RRMvoo3vHCAuRz2XM57sr5QMsrt09Qbw2axzT6v3IUpvr" crossorigin="anonymous">
-    <link rel="stylesheet" href="/assets/css/index-overrides.css" integrity="sha384-k0M3aN3QwDbGIJjg4yX9gSlBIKSd6+hn0nZv6AIUV1Vo5CNkRJtZjnQ9mUYjjDMb" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=IBM+Plex+Sans+Arabic:wght@400;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
-
-    <!-- ================= SCRIPTS (self-hosted, SRI-pinned) ================= -->
-    <script defer src="/assets/vendor/alpine-3.14.1.min.js" integrity="sha384-l8f0VcPi/M1iHPv8egOnY/15TDwqgbOR1anMIJWvU6nLRgZVLTLSaNqi/TOoT5Fh" crossorigin="anonymous"></script>
-    <script defer src="/assets/vendor/lucide-0.469.0.min.js" integrity="sha384-hJnF5AwidE18GSWTAGHv3ByzzvfNZ1Tcx5y1UUV3WkauuMCEzBJBMSwSt/PUPXnM" crossorigin="anonymous"></script>
-    <script defer src="/assets/js/index.js" integrity="sha384-fZbOsvCS+89U7wCLl/58PFC4lpgLWINTUCmixXbmDHh24eaVIV9e3Q6S8gYwdiiK" crossorigin="anonymous"></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#0a1723">
+  <meta name="robots" content="noindex,nofollow,noarchive">
+  <meta name="description" content="FLEX Logistics Saudi Arabia — industrial and chemical warehousing, domestic and cross-border freight, customs coordination, value-added logistics and 3PL/4PL solutions across Saudi Arabia and regional trade corridors.">
+  <title>FLEX Logistics Saudi Arabia | Continuity in Motion — Concept</title>
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/continuity.css?v=1">
+  <script defer src="/assets/continuity.js?v=1"></script>
 </head>
-<body class="bg-brand-dark text-white font-sans overflow-x-hidden selection:bg-flex-orange selection:text-black">
+<body>
+  <a class="skip-link" href="#main" data-t="skip">Skip to content</a>
+  <div class="scroll-line" id="scrollLine" aria-hidden="true"></div>
+  <svg class="svg-defs" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><defs>
+    <symbol id="arrow" viewBox="0 0 24 24"><path d="M5 19 19 5M7 5h12v12"/></symbol>
+    <symbol id="arrow-right" viewBox="0 0 24 24"><path d="M4 12h16m-7-7 7 7-7 7"/></symbol>
+    <symbol id="ico-warehouse" viewBox="0 0 24 24"><path d="m3 9 9-6 9 6v12H3zM3 9h18M8 21V11h8v10M8 15h8m-8 3h8"/></symbol>
+    <symbol id="truck" viewBox="0 0 24 24"><path d="M3 6h12v12H3zM15 10h4l3 4v4h-7M6 18a2 2 0 1 0 4 0 2 2 0 0 0-4 0m11 0a2 2 0 1 0 4 0 2 2 0 0 0-4 0"/></symbol>
+    <symbol id="box" viewBox="0 0 24 24"><path d="m12 2 9 5v10l-9 5-9-5V7zm-9 5 9 5 9-5M12 12v10m-5-17 10 5"/></symbol>
+    <symbol id="layers" viewBox="0 0 24 24"><path d="m12 3 9 5-9 5-9-5zm-9 9 9 5 9-5M3 16l9 5 9-5"/></symbol>
+    <symbol id="shield" viewBox="0 0 24 24"><path d="M12 2 4 6v6c0 6 4 9 8 10 4-1 8-4 8-10V6zM9 12l2 2 4-4"/></symbol>
+    <symbol id="spark" viewBox="0 0 24 24"><path d="m12 2 2.3 7.7L22 12l-7.7 2.3L12 22l-2.3-7.7L2 12l7.7-2.3z"/></symbol>
+    <symbol id="pin" viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 1 1 16 0z"/><circle cx="12" cy="10" r="2.6"/></symbol>
+    <symbol id="check" viewBox="0 0 24 24"><path d="M4 12.5 9.5 18 20 6"/></symbol>
+    <symbol id="menu" viewBox="0 0 24 24"><path d="M3 7h18M3 12h18M3 17h18"/></symbol>
+    <symbol id="close" viewBox="0 0 24 24"><path d="M5 5 19 19M19 5 5 19"/></symbol>
+    <symbol id="file" viewBox="0 0 24 24"><path d="M6 2h8l5 5v15H6zM14 2v6h5M9 13h7M9 17h7"/></symbol>
+    <symbol id="route" viewBox="0 0 24 24"><circle cx="5" cy="5" r="2"/><circle cx="19" cy="19" r="2"/><path d="M5 7v5a5 5 0 0 0 5 5h7M14 5h5v5"/></symbol>
+  </defs></svg>
 
-    <!-- Skip-link for accessibility / WCAG 2.2 AA -->
-    <a href="#main" class="sr-only focus:not-sr-only focus:fixed focus:top-2 focus:left-2 focus:z-[100] focus:bg-flex-orange focus:text-black focus:px-4 focus:py-2 focus:rounded-lg focus:font-bold">Skip to main content</a>
+  <div class="concept-ribbon" role="note"><span class="concept-dot"></span><span data-t="previewNote">DESIGN STUDY · NOT THE PUBLIC FLEX WEBSITE</span><span class="concept-ribbon-right">FLEX / 2026</span></div>
+  <header class="site-header" id="siteHeader">
+    <div class="shell nav-inner">
+      <a href="#top" class="brand" aria-label="FLEX Logistics Saudi Arabia">
+        <span class="brand-word" aria-hidden="true">FLE<span>X</span></span><span class="brand-descriptor">LOGISTICS <small>SAUDI ARABIA</small></span>
+      </a>
+      <nav class="desktop-nav" aria-label="Main navigation"><a href="#solutions" data-t="navSolutions">Solutions</a><a href="#warehouse" data-t="navWarehousing">Warehousing</a><a href="#network" data-t="navNetwork">Network</a><a href="#method" data-t="navMethod">Our approach</a><a href="#intelligence" data-t="navIntelligence">Intelligence</a><a href="#about" data-t="navAbout">About FLEX</a></nav>
+      <div class="nav-actions"><button type="button" class="language-toggle" id="langToggle" aria-label="Switch to Arabic">AR <span>/</span> EN</button><button type="button" class="nav-quote" data-open-brief><span data-t="planMove">Plan a move</span><svg><use href="#arrow"/></svg></button><button type="button" id="menuToggle" class="mobile-toggle" aria-label="Open menu" aria-expanded="false"><svg><use href="#menu"/></svg></button></div>
+    </div>
+    <nav class="mobile-nav" id="mobileNav" hidden aria-label="Mobile navigation"><a href="#solutions" data-t="navSolutions">Solutions</a><a href="#warehouse" data-t="navWarehousing">Warehousing</a><a href="#network" data-t="navNetwork">Network</a><a href="#method" data-t="navMethod">Our approach</a><a href="#intelligence" data-t="navIntelligence">Intelligence</a><a href="#about" data-t="navAbout">About FLEX</a><button type="button" data-open-brief data-t="planMove">Plan a move</button></nav>
+  </header>
 
-    <!-- ================= NAVIGATION ================= -->
-    <nav class="fixed w-full z-50 p-4 md:p-6" aria-label="Primary">
-        <div class="max-w-7xl mx-auto glass-cyber rounded-2xl px-6 md:px-8 py-4 flex justify-between items-center shadow-2xl">
-            <a href="/" class="flex flex-col group" aria-label="Flex Logistics Home">
-                <span class="text-2xl font-black tracking-tighter leading-none text-white group-hover:opacity-80 transition">FLEX<span class="text-flex-orange">LOGISTICS</span></span>
-                <span class="text-[9px] uppercase tracking-[0.2em] font-bold text-brand-grey mt-1" x-text="lang === 'en' ? 'Saudi-Born. Globally Capable.' : 'سعودية المنشأ. عالمية القدرات.'"></span>
-            </a>
-
-            <div class="hidden lg:flex items-center gap-8 text-[11px] font-bold uppercase tracking-[0.2em] text-gray-400">
-                <a href="#services" class="hover:text-flex-orange transition" x-text="lang === 'en' ? 'Solutions' : 'الحلول'"></a>
-                <a href="#multimodal" class="hover:text-flex-orange transition" x-text="lang === 'en' ? 'Network' : 'الشبكة'"></a>
-                <a href="#compliance" class="hover:text-flex-orange transition" x-text="lang === 'en' ? 'Compliance' : 'الامتثال'"></a>
-                <a href="/capabilities.html" class="hover:text-hazalyze-primary transition flex items-center gap-1.5">
-                    <span x-text="lang === 'en' ? 'Capabilities' : 'القدرات'"></span>
-                    <i data-lucide="external-link" class="w-3 h-3"></i>
-                </a>
-                <a href="#contact" class="hover:text-flex-orange transition" x-text="lang === 'en' ? 'Contact' : 'اتصل بنا'"></a>
-            </div>
-
-            <div class="flex items-center gap-3">
-                <button @click="lang = lang === 'en' ? 'ar' : 'en'" type="button" class="text-[10px] font-black border border-flex-orange/40 px-3 py-1.5 rounded-lg hover:bg-flex-orange hover:text-black transition uppercase" :aria-label="lang === 'en' ? 'Switch to Arabic' : 'Switch to English'">
-                    <span x-text="lang === 'en' ? 'AR' : 'EN'"></span>
-                </button>
-                <a href="/capabilities.html" class="bg-flex-orange hover:bg-amber-500 text-black px-5 py-2 rounded-lg text-xs font-bold transition uppercase hidden md:inline-block">
-                    <span x-text="lang === 'en' ? 'Explore Platform' : 'استكشف المنصة'"></span>
-                </a>
-                <button @click="mobileMenu = !mobileMenu" type="button" class="lg:hidden p-2" aria-label="Toggle menu" :aria-expanded="mobileMenu">
-                    <i :data-lucide="mobileMenu ? 'x' : 'menu'" class="w-5 h-5"></i>
-                </button>
-            </div>
+  <main id="main">
+    <section class="hero" id="top" aria-labelledby="heroTitle">
+      <div class="hero-photo" aria-hidden="true"></div><div class="hero-grid" aria-hidden="true"></div>
+      <div class="shell hero-content">
+        <div class="hero-copy"><div class="eyebrow appear"><span class="eyebrow-rule"></span><span data-t="heroKicker">SAUDI ROOTS. REGIONAL REACH. REAL EXECUTION.</span></div>
+          <h1 id="heroTitle" class="hero-title appear" data-delay="1"><span data-t="heroTitle1">The route may</span><span data-t="heroTitle2">change.</span><em data-t="heroTitle3">The commitment doesn't.</em></h1>
+          <p class="hero-intro appear" data-delay="2" data-t="heroBody">In a region where trade routes, timelines and priorities can shift, continuity comes from preparation. FLEX connects warehousing, road transport, customs coordination and 3PL/4PL execution around the decisions that matter.</p>
+          <div class="hero-buttons appear" data-delay="3"><button class="button button-orange" data-open-brief type="button"><span data-t="discussRequirement">Discuss your requirement</span><svg><use href="#arrow"/></svg></button><a class="button button-outline" href="#network"><span data-t="exploreNetwork">Explore the regional network</span><svg><use href="#arrow-right"/></svg></a></div>
         </div>
-
-        <!-- Mobile menu -->
-        <div x-show="mobileMenu" x-cloak x-transition class="lg:hidden max-w-7xl mx-auto mt-2 glass-cyber rounded-2xl p-6 flex flex-col gap-4 text-sm font-bold uppercase tracking-wider text-gray-300">
-            <a href="#services" @click="mobileMenu = false" class="hover:text-flex-orange" x-text="lang === 'en' ? 'Solutions' : 'الحلول'"></a>
-            <a href="#multimodal" @click="mobileMenu = false" class="hover:text-flex-orange" x-text="lang === 'en' ? 'Network' : 'الشبكة'"></a>
-            <a href="#compliance" @click="mobileMenu = false" class="hover:text-flex-orange" x-text="lang === 'en' ? 'Compliance' : 'الامتثال'"></a>
-            <a href="/capabilities.html" @click="mobileMenu = false" class="hover:text-hazalyze-primary" x-text="lang === 'en' ? 'Full Capabilities ↗' : 'القدرات الكاملة ↗'"></a>
-            <a href="#contact" @click="mobileMenu = false" class="hover:text-flex-orange" x-text="lang === 'en' ? 'Contact' : 'اتصل بنا'"></a>
-        </div>
-    </nav>
-
-    <main id="main">
-
-    <!-- ================= HERO ================= -->
-    <header class="min-h-screen flex items-center pt-32 pb-20 px-6 relative overflow-hidden">
-        <div class="absolute top-0 right-0 w-[600px] h-[600px] bg-flex-orange/10 rounded-full blur-[120px] -z-10 float-slow" aria-hidden="true"></div>
-        <div class="absolute bottom-0 left-0 w-[400px] h-[400px] bg-blue-900/10 rounded-full blur-[100px] -z-10" aria-hidden="true"></div>
-
-        <div class="max-w-7xl mx-auto w-full grid lg:grid-cols-2 gap-16 items-center">
-            <div class="relative z-10">
-                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-flex-orange/10 border border-flex-orange/20 text-flex-orange text-[10px] font-bold tracking-widest uppercase mb-8">
-                    <span class="w-2 h-2 rounded-full bg-flex-orange animate-pulse"></span>
-                    <span x-text="lang === 'en' ? 'Saudi-Born 3PL — Now Across 15 MENA Countries' : 'شركة لوجستية سعودية المنشأ — الآن في 15 دولة'"></span>
-                </div>
-
-                <h1 class="text-huge mb-8 leading-tight">
-                    <span x-text="lang === 'en' ? 'Logistics Managed With' : 'خدمات لوجستية تدار'"></span><br>
-                    <span class="orange-text-gradient" x-text="lang === 'en' ? 'Intelligence.' : 'بذكاء.'"></span>
-                </h1>
-
-                <p class="text-lg text-gray-400 max-w-xl mb-10 leading-relaxed font-light"
-                   x-text="lang === 'en'
-                        ? 'Civil Defense-certified hazmat. SFDA-licensed pharma cold chain. ZATCA-compliant customs. 10,000+ vetted carriers. All orchestrated by Hazalyze — our AI compliance brain. End-to-end supply chain intelligence engineered for the Middle East.'
-                        : 'تخزين مواد خطرة معتمد من الدفاع المدني. سلسلة تبريد دوائية مرخصة من هيئة الغذاء والدواء. تخليص جمركي متوافق مع الزكاة والدخل. أكثر من 10 آلاف ناقل مؤهل. كل ذلك يديره Hazalyze — عقل الامتثال بالذكاء الاصطناعي.'">
-                </p>
-
-                <!-- Tracking Widget -->
-                <div id="track" class="glass-cyber p-2 rounded-[24px] brand-glow max-w-md mb-8" role="search">
-                    <label for="trackInput" class="sr-only">Tracking or Waybill ID</label>
-                    <div class="flex flex-col sm:flex-row gap-2">
-                        <div class="flex-grow relative group">
-                            <i data-lucide="hash" class="absolute left-5 top-1/2 -translate-y-1/2 text-gray-500 group-focus-within:text-flex-orange transition w-4 h-4" aria-hidden="true"></i>
-                            <input type="text" id="trackInput" name="trackingId" autocomplete="off" placeholder="TRACKING / WAYBILL ID" inputmode="text"
-                                class="w-full bg-slate-900/60 border border-white/5 rounded-[16px] py-4 pl-12 pr-4 text-white focus:outline-none focus:border-flex-orange/50 transition font-mono tracking-widest text-xs uppercase h-full">
-                        </div>
-                        <button type="button" data-track-submit class="bg-white text-black hover:bg-flex-orange hover:text-black px-8 py-4 rounded-[16px] font-black transition-all flex items-center justify-center gap-2 text-xs tracking-wider">
-                            <span x-text="lang === 'en' ? 'TRACE' : 'تتبع'"></span> <i data-lucide="arrow-right" class="w-4 h-4" aria-hidden="true"></i>
-                        </button>
-                    </div>
-                    <p id="trackStatus" class="sr-only" aria-live="polite"></p>
-                </div>
-
-                <!-- Compliance pills -->
-                <ul class="flex flex-wrap gap-3 list-none p-0 m-0">
-                    <li class="px-4 py-2 bg-white/5 rounded-lg border border-white/5 flex items-center gap-2 text-xs font-bold text-gray-300"><i data-lucide="check-circle" class="w-4 h-4 text-flex-orange" aria-hidden="true"></i> SFDA Licensed</li>
-                    <li class="px-4 py-2 bg-white/5 rounded-lg border border-white/5 flex items-center gap-2 text-xs font-bold text-gray-300"><i data-lucide="check-circle" class="w-4 h-4 text-flex-orange" aria-hidden="true"></i> Civil Defense Hazmat</li>
-                    <li class="px-4 py-2 bg-white/5 rounded-lg border border-white/5 flex items-center gap-2 text-xs font-bold text-gray-300"><i data-lucide="check-circle" class="w-4 h-4 text-flex-orange" aria-hidden="true"></i> ZATCA Compliant</li>
-                    <li class="px-4 py-2 bg-white/5 rounded-lg border border-white/5 flex items-center gap-2 text-xs font-bold text-gray-300"><i data-lucide="check-circle" class="w-4 h-4 text-flex-orange" aria-hidden="true"></i> ISO 9001 / 14001 / 45001</li>
-                </ul>
-            </div>
-
-            <!-- Stats Grid -->
-            <div class="grid grid-cols-2 gap-6 relative" aria-label="Key statistics">
-                <div class="glass-cyber p-8 rounded-3xl border-l-4 border-flex-orange transform hover:-translate-y-2 transition duration-300">
-                    <div class="text-4xl font-black mb-2 text-white">200K<span class="text-flex-orange">+</span></div>
-                    <div class="text-[10px] font-bold uppercase tracking-widest text-gray-500" x-text="lang === 'en' ? 'sqm Storage Space' : 'متر مربع تخزين'"></div>
-                </div>
-                <div class="glass-cyber p-8 rounded-3xl border-l-4 border-flex-orange transform hover:-translate-y-2 transition duration-300 mt-8">
-                    <div class="text-4xl font-black mb-2 text-white">10K<span class="text-flex-orange">+</span></div>
-                    <div class="text-[10px] font-bold uppercase tracking-widest text-gray-500" x-text="lang === 'en' ? 'Vetted Carriers' : 'ناقل مؤهل'"></div>
-                </div>
-                <div class="glass-cyber p-8 rounded-3xl border-l-4 border-flex-orange transform hover:-translate-y-2 transition duration-300">
-                    <div class="text-4xl font-black mb-2 text-white">15</div>
-                    <div class="text-[10px] font-bold uppercase tracking-widest text-gray-500" x-text="lang === 'en' ? 'MENA Corridors' : 'ممر شرق أوسطي'"></div>
-                </div>
-                <div class="glass-cyber p-8 rounded-3xl border-l-4 border-flex-orange transform hover:-translate-y-2 transition duration-300 mt-8">
-                    <div class="text-4xl font-black mb-2 text-white">98.7%</div>
-                    <div class="text-[10px] font-bold uppercase tracking-widest text-gray-500" x-text="lang === 'en' ? 'On-Time Compliance' : 'الامتثال في الوقت'"></div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Track Result Modal -->
-        <div id="resultPanel" class="hidden fixed inset-0 z-[60] bg-black/80 backdrop-blur-sm flex items-center justify-center p-6" role="dialog" aria-modal="true" aria-labelledby="trackTitle">
-            <div class="glass-cyber max-w-3xl w-full rounded-[32px] overflow-hidden relative">
-                <button type="button" data-close-track class="absolute top-6 right-6 p-2 hover:bg-white/10 rounded-full transition" aria-label="Close"><i data-lucide="x" class="text-white"></i></button>
-                <div class="p-10">
-                    <div class="flex items-center gap-3 mb-8">
-                        <div class="w-3 h-3 bg-green-500 rounded-full animate-pulse"></div>
-                        <h2 id="trackTitle" class="text-2xl font-black uppercase tracking-wide">Status: In-Transit</h2>
-                    </div>
-                    <div class="space-y-8">
-                        <div class="relative pl-8 border-l-2 border-white/10 space-y-8">
-                            <div class="relative">
-                                <div class="absolute -left-[41px] top-0 w-5 h-5 bg-flex-orange rounded-full border-4 border-brand-card"></div>
-                                <div class="text-xs font-bold text-flex-orange uppercase mb-1">Today, 14:30</div>
-                                <div class="font-bold text-lg">Shipment arrived at Dammam Hub</div>
-                                <div class="text-sm text-gray-500">Customs Clearance Process Initiated</div>
-                            </div>
-                            <div class="relative opacity-50">
-                                <div class="absolute -left-[41px] top-0 w-5 h-5 bg-gray-600 rounded-full border-4 border-brand-card"></div>
-                                <div class="text-xs font-bold text-gray-500 uppercase mb-1">Yesterday, 09:00</div>
-                                <div class="font-bold text-lg">Dispatched from Riyadh Warehouse</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="bg-flex-orange/10 p-6 flex justify-between items-center">
-                    <span class="text-xs font-bold text-flex-orange uppercase tracking-widest">Demo Tracking Result</span>
-                    <a href="/capabilities.html#intelligence" class="text-xs font-bold underline hover:text-flex-orange">View Full Tracking Platform</a>
-                </div>
-            </div>
-        </div>
-    </header>
-
-    <!-- ================= CORE SERVICES ================= -->
-    <section id="services" class="py-24 px-6 bg-brand-card relative" aria-labelledby="servicesTitle">
-        <div class="max-w-7xl mx-auto">
-            <div class="text-center mb-20">
-                <h2 id="servicesTitle" class="text-section uppercase mb-6" x-text="lang === 'en' ? 'Core Capabilities' : 'القدرات الأساسية'"></h2>
-                <p class="text-gray-400 max-w-2xl mx-auto" x-text="lang === 'en' ? 'End-to-end logistics solutions engineered for the Middle East. Backed by 200K+ sqm of certified facilities and AI-powered compliance.' : 'حلول لوجستية شاملة مصممة للشرق الأوسط. مدعومة بأكثر من 200,000 متر مربع من المرافق المعتمدة والامتثال بالذكاء الاصطناعي.'"></p>
-            </div>
-
-            <div class="grid md:grid-cols-3 gap-8">
-                <article class="glass-cyber p-8 rounded-3xl group hover:border-flex-orange/50 transition duration-500">
-                    <div class="w-14 h-14 bg-flex-orange/10 rounded-2xl flex items-center justify-center mb-8 group-hover:bg-flex-orange group-hover:text-black transition duration-500 text-flex-orange">
-                        <i data-lucide="warehouse" class="w-7 h-7" aria-hidden="true"></i>
-                    </div>
-                    <h3 class="text-xl font-black uppercase mb-4" x-text="lang === 'en' ? 'Warehousing & Hazmat' : 'التخزين والمواد الخطرة'"></h3>
-                    <p class="text-sm text-gray-400 leading-relaxed mb-6" x-text="lang === 'en' ? '200,000+ sqm of ambient, temperature-controlled, and Civil Defense Class 2-9 hazmat storage. SBC 801 compliant. SFDA-approved facilities across KSA.' : 'أكثر من 200,000 متر مربع من التخزين العادي والمبرد والمواد الخطرة من الفئة 2-9 المعتمدة من الدفاع المدني. متوافق مع كود البناء السعودي 801.'"></p>
-                    <ul class="space-y-2 text-xs font-bold text-gray-500 uppercase tracking-wider">
-                        <li class="flex items-center gap-2"><div class="w-1.5 h-1.5 bg-flex-orange rounded-full"></div>WMS / Inventory Mgmt</li>
-                        <li class="flex items-center gap-2"><div class="w-1.5 h-1.5 bg-flex-orange rounded-full"></div>Cross-Docking</li>
-                        <li class="flex items-center gap-2"><div class="w-1.5 h-1.5 bg-flex-orange rounded-full"></div>MSDS / SDS Lifecycle</li>
-                    </ul>
-                </article>
-
-                <article class="glass-cyber p-8 rounded-3xl group hover:border-flex-orange/50 transition duration-500">
-                    <div class="w-14 h-14 bg-flex-orange/10 rounded-2xl flex items-center justify-center mb-8 group-hover:bg-flex-orange group-hover:text-black transition duration-500 text-flex-orange">
-                        <i data-lucide="truck" class="w-7 h-7" aria-hidden="true"></i>
-                    </div>
-                    <h3 class="text-xl font-black uppercase mb-4" x-text="lang === 'en' ? 'Multimodal Freight' : 'الشحن متعدد الوسائط'"></h3>
-                    <p class="text-sm text-gray-400 leading-relaxed mb-6" x-text="lang === 'en' ? '10,000+ vetted carriers covering FTL, LTL, specialized, road-rail hybrid, sea and air. 15 cross-border MENA corridors with bonded transit.' : 'أكثر من 10 آلاف ناقل مؤهل يغطون النقل الكامل والجزئي والمتخصص والهجين بري-سككي والبحري والجوي. 15 ممراً عابراً للحدود.'"></p>
-                    <ul class="space-y-2 text-xs font-bold text-gray-500 uppercase tracking-wider">
-                        <li class="flex items-center gap-2"><div class="w-1.5 h-1.5 bg-flex-orange rounded-full"></div>KSA-Wide Coverage</li>
-                        <li class="flex items-center gap-2"><div class="w-1.5 h-1.5 bg-flex-orange rounded-full"></div>GCC + MENA Transit</li>
-                        <li class="flex items-center gap-2"><div class="w-1.5 h-1.5 bg-flex-orange rounded-full"></div>Real-Time GPS Tracking</li>
-                    </ul>
-                </article>
-
-                <article class="glass-cyber p-8 rounded-3xl group hover:border-flex-orange/50 transition duration-500">
-                    <div class="w-14 h-14 bg-flex-orange/10 rounded-2xl flex items-center justify-center mb-8 group-hover:bg-flex-orange group-hover:text-black transition duration-500 text-flex-orange">
-                        <i data-lucide="shield-check" class="w-7 h-7" aria-hidden="true"></i>
-                    </div>
-                    <h3 class="text-xl font-black uppercase mb-4" x-text="lang === 'en' ? 'Customs & Compliance' : 'الجمارك والامتثال'"></h3>
-                    <p class="text-sm text-gray-400 leading-relaxed mb-6" x-text="lang === 'en' ? 'Licensed customs brokerage with deep ZATCA, SFDA, Civil Defense and chemical-permit expertise. 100% audit-ready, always.' : 'وساطة جمركية مرخصة مع خبرة عميقة في الزكاة والدخل والغذاء والدواء والدفاع المدني وتصاريح المواد الكيميائية.'"></p>
-                    <ul class="space-y-2 text-xs font-bold text-gray-500 uppercase tracking-wider">
-                        <li class="flex items-center gap-2"><div class="w-1.5 h-1.5 bg-flex-orange rounded-full"></div>Bonded Warehousing</li>
-                        <li class="flex items-center gap-2"><div class="w-1.5 h-1.5 bg-flex-orange rounded-full"></div>Rapid Clearance</li>
-                        <li class="flex items-center gap-2"><div class="w-1.5 h-1.5 bg-flex-orange rounded-full"></div>Documentation Suite</li>
-                    </ul>
-                </article>
-            </div>
-
-            <div class="text-center mt-16">
-                <a href="/capabilities.html" class="inline-flex items-center gap-3 px-8 py-4 bg-gradient-to-r from-flex-orange to-flex-amber rounded-xl font-bold text-black text-sm uppercase tracking-wider hover:shadow-2xl hover:shadow-flex-orange/30 transition-all">
-                    <span x-text="lang === 'en' ? 'Explore the Full Capabilities Showcase' : 'استكشف العرض الكامل للقدرات'"></span>
-                    <i data-lucide="arrow-right" class="w-4 h-4" aria-hidden="true"></i>
-                </a>
-            </div>
-        </div>
+        <div class="hero-side-note appear" data-delay="3"><span class="v-line"></span><div class="side-label" data-t="heroSideLabel">THE OPERATING PERSPECTIVE</div><p data-t="heroSide">Cargo doesn't care why a plan changes. It still needs a considered next step.</p><span class="side-index">01 / 05</span></div>
+      </div>
+      <div class="hero-bottom shell"><div class="hero-service-tag"><svg><use href="#warehouse"/></svg><span data-t="hs1">Warehousing &amp; industrial storage</span></div><div class="hero-service-tag"><svg><use href="#truck"/></svg><span data-t="hs2">Domestic &amp; cross-border transport</span></div><div class="hero-service-tag"><svg><use href="#route"/></svg><span data-t="hs3">Customs, forwarding &amp; orchestration</span></div><div class="hero-service-tag hero-service-supp"><span>EST. IN KSA / FLEX LOGISTICS</span></div></div>
     </section>
 
-    <!-- ================= HAZALYZE AI BANNER ================= -->
-    <section class="py-24 px-6 case-study-bg relative overflow-hidden" aria-labelledby="hazalyzeTitle">
-        <div class="absolute top-0 right-0 w-[800px] h-[800px] bg-hazalyze-primary/5 rounded-full blur-[150px]" aria-hidden="true"></div>
+    <section class="lead-section" id="solutions" aria-labelledby="leadHeading"><div class="shell"><div class="section-head split appear"><div><div class="section-meta"><span class="serial">01</span><span data-t="leadKicker">ONE PARTNER. MANY MOVING PARTS.</span></div><h2 id="leadHeading" data-t="leadTitle">The right logistics solution<br>begins with the full picture.</h2></div><p data-t="leadIntro">From chemical storage in the Eastern Province to regional overland movements, each service can stand on its own—or connect into a wider operating model.</p></div>
+    <div class="feature-grid">
+      <article class="feature feature-large appear"><div class="feature-photo feature-warehouse"></div><div class="feature-body"><span class="tag" data-t="feature1Label">01 / WAREHOUSING</span><h3 data-t="feature1Title">Space is only the beginning.</h3><p data-t="feature1Desc">Industrial and chemical storage, pallet handling, inventory control and value-added operations built around commodity requirements.</p><button type="button" class="text-action" data-service="warehousing"><span data-t="exploreService">Explore the service</span><svg><use href="#arrow"/></svg></button></div></article>
+      <article class="feature appear" data-delay="1"><div class="feature-photo feature-transport"></div><div class="feature-body"><span class="tag" data-t="feature2Label">02 / MOVEMENT</span><h3 data-t="feature2Title">Reach, without the guesswork.</h3><p data-t="feature2Desc">FTL, LTL, dedicated and specialized movements across Saudi Arabia and selected regional corridors, planned load by load.</p><button type="button" class="text-action" data-service="transport"><span data-t="exploreService">Explore the service</span><svg><use href="#arrow"/></svg></button></div></article>
+      <article class="feature appear" data-delay="2"><div class="feature-photo feature-port"></div><div class="feature-body"><span class="tag" data-t="feature3Label">03 / COORDINATION</span><h3 data-t="feature3Title">One movement. Many handovers.</h3><p data-t="feature3Desc">Freight forwarding, customs coordination and end-to-end shipment planning that account for the interfaces between parties.</p><button type="button" class="text-action" data-service="customs"><span data-t="exploreService">Explore the service</span><svg><use href="#arrow"/></svg></button></div></article>
+    </div>
+    <div class="service-extensions appear"><div class="extensions-label"><span data-t="extensionsTitle">MORE WAYS TO WORK WITH FLEX</span><p data-t="extensionsDesc">Specialized services can be scoped individually or linked to your wider logistics programme.</p></div><div class="extension-links"><button type="button" data-service="valueAdded"><span><strong data-t="extension1">Value-added logistics</strong><small data-t="extension1Desc">Repacking · labelling · kitting · handling</small></span><svg><use href="#arrow"/></svg></button><button type="button" data-service="orchestration"><span><strong data-t="extension2">Integrated 3PL / 4PL</strong><small data-t="extension2Desc">Partners · workstreams · reporting · accountability</small></span><svg><use href="#arrow"/></svg></button><button type="button" data-service="industrial"><span><strong data-t="extension3">Industrial logistics solutions</strong><small data-t="extension3Desc">Network design · facility sourcing · build-to-suit enquiries</small></span><svg><use href="#arrow"/></svg></button></div></div>
+    <div class="scope-bar appear"><div><span class="scope-num">29,000 <small>m²</small></span><span data-t="scope1">2026 controlled warehousing portfolio*</span></div><div><span class="scope-num">3PL <i>/</i> 4PL</span><span data-t="scope2">Modular or integrated solutions</span></div><div><span class="scope-num">DG <i>/</i> SDS</span><span data-t="scope3">Commodity-specific acceptance</span></div><div class="scope-note" data-t="scopeFoot">*Management-reported footprint for design review; subject to confirmation before publication.</div></div>
+  </div></section>
 
-        <div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 items-center relative z-10">
-            <div>
-                <div class="text-[10px] font-black uppercase tracking-[0.3em] text-hazalyze-primary mb-4" x-text="lang === 'en' ? 'AI Compliance Intelligence' : 'الذكاء التنظيمي بالذكاء الاصطناعي'"></div>
-                <h2 id="hazalyzeTitle" class="text-section uppercase mb-8 text-white">
-                    <span x-text="lang === 'en' ? 'Meet ' : 'تعرف على '"></span>
-                    <span class="bg-gradient-to-r from-hazalyze-primary to-hazalyze-glow bg-clip-text text-transparent">Hazalyze</span>
-                </h2>
-                <p class="text-lg text-gray-400 mb-10 leading-relaxed" x-text="lang === 'en' ? 'Our proprietary AI brain ingests SDS / MSDS, monitors regulatory changes (Civil Defense, SFDA, ZATCA, GHS), runs process mining on live logistics flows and produces always-on audit readiness — for chemicals, pharma, FMCG and industrial operators.' : 'عقل الذكاء الاصطناعي الخاص بنا يستوعب وثائق MSDS، ويراقب التغييرات التنظيمية، ويحلل تدفقات الخدمات اللوجستية في الوقت الفعلي، وينتج جاهزية تدقيق دائمة.'"></p>
-                <div class="flex flex-col gap-4">
-                    <div class="flex items-center gap-4 p-4 bg-white/5 rounded-xl border border-white/5">
-                        <div class="w-10 h-10 rounded-full bg-hazalyze-primary/20 flex items-center justify-center text-hazalyze-primary font-black">1</div>
-                        <div><h4 class="font-bold text-white text-sm uppercase">MSDS / SDS AI Lifecycle</h4><p class="text-xs text-gray-500">Auto-extracted, multi-language, version-controlled.</p></div>
-                    </div>
-                    <div class="flex items-center gap-4 p-4 bg-white/5 rounded-xl border border-white/5">
-                        <div class="w-10 h-10 rounded-full bg-hazalyze-primary/20 flex items-center justify-center text-hazalyze-primary font-black">2</div>
-                        <div><h4 class="font-bold text-white text-sm uppercase">Process Mining & Bottleneck Alerts</h4><p class="text-xs text-gray-500">Real-time deviations, root-cause, SLA-aware.</p></div>
-                    </div>
-                    <div class="flex items-center gap-4 p-4 bg-white/5 rounded-xl border border-white/5">
-                        <div class="w-10 h-10 rounded-full bg-hazalyze-primary/20 flex items-center justify-center text-hazalyze-primary font-black">3</div>
-                        <div><h4 class="font-bold text-white text-sm uppercase">Always-On Audit Readiness</h4><p class="text-xs text-gray-500">Civil Defense, SFDA, ZATCA inspection-grade reports.</p></div>
-                    </div>
-                </div>
-                <a href="/capabilities.html#hazalyze" class="inline-flex items-center gap-2 mt-8 text-hazalyze-primary font-bold text-sm uppercase tracking-wider hover:gap-4 transition-all">
-                    <span x-text="lang === 'en' ? 'Deep dive into Hazalyze' : 'اطلع على Hazalyze بالتفصيل'"></span>
-                    <i data-lucide="arrow-right" class="w-4 h-4" aria-hidden="true"></i>
-                </a>
-            </div>
+  <section class="warehouse-story" id="warehouse"><div class="warehouse-photo"><span class="photo-index">FLEX / WAREHOUSING</span></div><div class="warehouse-copy"><div class="section-meta"><span class="serial">02</span><span data-t="warehouseKicker">INDUSTRIAL &amp; CHEMICAL LOGISTICS</span></div><h2 data-t="warehouseTitle">Not every pallet is<br>just another pallet.</h2><p data-t="warehouseIntro">For regulated, sensitive or operationally demanding cargo, the question is not only where it fits. It's whether the entire storage and handling environment is right for it.</p><div class="review-rows"><div><span class="review-index">01</span><div><strong data-t="w1Title">Commodity-led acceptance</strong><small data-t="w1Desc">Safety data sheets, classification, packaging and compatibility</small></div></div><div><span class="review-index">02</span><div><strong data-t="w2Title">Operational controls</strong><small data-t="w2Desc">Segregation, handling methods, site-specific fire and safety controls</small></div></div><div><span class="review-index">03</span><div><strong data-t="w3Title">Warehouse to distribution</strong><small data-t="w3Desc">Inventory, orders, value-added work and onward freight coordination</small></div></div></div><button type="button" class="text-action light-action" data-service="warehousing"><span data-t="warehouseCTA">Discuss a storage requirement</span><svg><use href="#arrow"/></svg></button><p class="caution" data-t="warehouseNote">Acceptance of dangerous goods is subject to the specific commodity, facility authorizations and safety review; this page is not a blanket licence claim.</p></div></section>
 
-            <div class="relative">
-                <div class="glass-cyber p-10 rounded-[40px] border border-hazalyze-primary/20">
-                    <div class="grid grid-cols-2 gap-6">
-                        <div class="text-center p-6 bg-brand-dark/50 rounded-2xl">
-                            <i data-lucide="thermometer" class="w-8 h-8 text-flex-orange mx-auto mb-4" aria-hidden="true"></i>
-                            <div class="text-2xl font-black text-white">2-8 °C</div>
-                            <div class="text-[9px] uppercase tracking-widest text-gray-500 mt-2">Cold Chain</div>
-                        </div>
-                        <div class="text-center p-6 bg-brand-dark/50 rounded-2xl">
-                            <i data-lucide="clock" class="w-8 h-8 text-hazalyze-primary mx-auto mb-4" aria-hidden="true"></i>
-                            <div class="text-2xl font-black text-white">99.9%</div>
-                            <div class="text-[9px] uppercase tracking-widest text-gray-500 mt-2">Temp Compliance</div>
-                        </div>
-                        <div class="text-center p-6 bg-brand-dark/50 rounded-2xl">
-                            <i data-lucide="brain-circuit" class="w-8 h-8 text-hazalyze-primary mx-auto mb-4" aria-hidden="true"></i>
-                            <div class="text-2xl font-black text-white">100%</div>
-                            <div class="text-[9px] uppercase tracking-widest text-gray-500 mt-2">GDP Conformance</div>
-                        </div>
-                        <div class="text-center p-6 bg-brand-dark/50 rounded-2xl">
-                            <i data-lucide="shield-check" class="w-8 h-8 text-flex-orange mx-auto mb-4" aria-hidden="true"></i>
-                            <div class="text-2xl font-black text-white">100%</div>
-                            <div class="text-[9px] uppercase tracking-widest text-gray-500 mt-2">CD Inspection Pass</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+  <section class="network-section" id="network" aria-labelledby="networkHeading"><div class="shell"><div class="section-head split appear"><div><div class="section-meta"><span class="serial">03</span><span data-t="networkKicker">CONNECTED TO A WIDER REGION</span></div><h2 id="networkHeading" data-t="networkTitle">A regional network.<br>A local decision at every turn.</h2></div><p data-t="networkIntro">Explore representative corridors from Dammam. Every movement is scoped against the cargo, the border or port, the responsible parties and conditions at the time of dispatch.</p></div>
+    <div class="atlas appear" id="atlas"><div class="atlas-top"><div class="atlas-id"><span class="atlas-dot"></span><span>FLEX / REGIONAL CORRIDOR ATLAS</span></div><span class="atlas-disclaimer" data-t="atlasNotice">ROUTE CONTEXT · NOT LIVE BORDER DATA</span></div>
+      <div class="atlas-layout"><div class="atlas-map"><div id="mapHolder" class="map-holder"><img src="/assets/mena-network.svg" alt="Schematic Middle East regional network map showing Saudi Arabia and connected markets" width="1120" height="755"></div><div class="map-credit">NATURAL EARTH GEOGRAPHY · SCHEMATIC CONNECTIONS</div></div>
+        <div class="atlas-detail"><div class="detail-eyebrow"><span data-t="selectedLane">SELECTED CORRIDOR</span><span id="routeIndex">02 / 09</span></div><h3 id="routeTitle">Saudi Arabia ↔ UAE</h3><p id="routeDescription">FTL and LTL coordination via Al Batha / Al Ghuwaifat, with cargo documentation, border handovers and destination scheduling.</p><div class="detail-row"><span data-t="detailMode">MOVEMENT</span><strong id="detailModeValue">Road freight / FTL &amp; LTL</strong></div><div class="detail-row"><span data-t="detailGateway">GATEWAY TO REVIEW</span><strong id="detailGatewayValue">Al Batha / Al Ghuwaifat</strong></div><div class="detail-row"><span data-t="detailWatch">OPERATIONAL FOCUS</span><strong id="detailWatchValue">Cargo controls, importer readiness and receiving plan</strong></div><p class="detail-warning" data-t="routeCaution">Routing and services depend on availability, applicable permissions and shipment particulars.</p><button type="button" class="atlas-button" data-open-brief><span data-t="quoteLane">Build an enquiry for this lane</span><svg><use href="#arrow"/></svg></button></div></div>
+      <div class="atlas-switch" role="group" aria-label="Choose regional corridor"><button class="lane-tab is-active" type="button" data-lane="uae" aria-pressed="true">UAE</button><button class="lane-tab" type="button" data-lane="kuwait" aria-pressed="false">KUWAIT</button><button class="lane-tab" type="button" data-lane="bahrain" aria-pressed="false">BAHRAIN</button><button class="lane-tab" type="button" data-lane="qatar" aria-pressed="false">QATAR</button><button class="lane-tab" type="button" data-lane="oman" aria-pressed="false">OMAN</button><button class="lane-tab" type="button" data-lane="jordan" aria-pressed="false">JORDAN</button><button class="lane-tab" type="button" data-lane="iraq" aria-pressed="false">IRAQ</button><button class="lane-tab" type="button" data-lane="egypt" aria-pressed="false">EGYPT</button><button class="lane-tab" type="button" data-lane="domestic" aria-pressed="false">KSA</button></div>
+    </div><div class="atlas-bottom"><span data-t="networkBottom">Beyond the illustrated corridors: nationwide Saudi distribution, freight forwarding and tailored regional moves are scoped on request.</span><a href="mailto:info@scsflex.com?subject=FLEX%20regional%20network%20enquiry" class="inline-link" data-t="networkContact">Discuss another corridor →</a></div></div></section>
 
-    <!-- ================= NETWORK ================= -->
-    <section id="multimodal" class="py-24 px-6 bg-brand-dark" aria-labelledby="networkTitle">
-        <div class="max-w-7xl mx-auto">
-            <div class="text-center mb-16">
-                <h2 id="networkTitle" class="text-section uppercase mb-4" x-text="lang === 'en' ? 'Regional Network' : 'الشبكة الإقليمية'"></h2>
-                <p class="text-gray-400" x-text="lang === 'en' ? 'Sustainable multimodal transport connecting Saudi Arabia to 15 MENA countries — and the world.' : 'نقل متعدد الوسائط مستدام يربط المملكة بـ 15 دولة في الشرق الأوسط — والعالم.'"></p>
-            </div>
+  <section class="method-section" id="method"><div class="shell"><div class="section-head split appear"><div><div class="section-meta"><span class="serial">04</span><span data-t="methodKicker">THE WORK BEHIND THE MOVEMENT</span></div><h2 data-t="methodTitle">A good plan works.<br>A resilient plan adapts.</h2></div><p data-t="methodIntro">A responsible operating model connects documentation, equipment, facilities and people. Before a shipment moves, the dependencies should already be visible.</p></div><div class="method-layout"><div class="method-main appear"><div class="method-quote" data-t="methodQuote">“Reliability is not a claim on a website. It's the decisions made before a problem reaches the customer.”</div><div class="method-side-info"><span>FLEX / OPERATING DISCIPLINE</span><span>01 — 04</span></div></div><div class="method-steps"><article class="method-step appear"><span>01</span><div><h3 data-t="m1Title">Understand the cargo</h3><p data-t="m1Desc">Commodity, packaging, special handling, quantities and delivery commitments.</p></div><svg><use href="#file"/></svg></article><article class="method-step appear"><span>02</span><div><h3 data-t="m2Title">Validate the path</h3><p data-t="m2Desc">Route, documents, permits, carrier arrangements and handover responsibilities.</p></div><svg><use href="#route"/></svg></article><article class="method-step appear"><span>03</span><div><h3 data-t="m3Title">Coordinate execution</h3><p data-t="m3Desc">Receiving, storage, dispatch, milestones and exception escalation.</p></div><svg><use href="#layers"/></svg></article><article class="method-step appear"><span>04</span><div><h3 data-t="m4Title">Close the loop</h3><p data-t="m4Desc">Proof of delivery, service review, measurable outcomes and what to improve.</p></div><svg><use href="#check"/></svg></article></div></div></div></section>
 
-            <div class="glass-cyber rounded-[40px] p-8 md:p-12 border border-flex-orange/20 relative overflow-hidden">
-                <div class="grid lg:grid-cols-2 gap-12 items-center">
-                    <div>
-                        <div class="inline-block px-3 py-1 rounded-md bg-green-500/20 text-green-500 text-[10px] font-black uppercase tracking-widest mb-6">Sustainability Focus</div>
-                        <h3 class="text-3xl font-black uppercase mb-6 text-white" x-text="lang === 'en' ? 'Green Logistics Channels' : 'قنوات لوجستية خضراء'"></h3>
-                        <p class="text-gray-400 text-sm leading-relaxed mb-8" x-text="lang === 'en' ? 'Hybrid Road-Rail solutions deliver significant carbon reduction for cross-border shipments. By integrating rail freight for long-haul routes (Dammam-Riyadh-Jeddah), we optimise both cost and environmental impact.' : 'حلول النقل الهجين البري-السككي تقدم تخفيضاً كبيراً للكربون للشحنات العابرة للحدود.'"></p>
-                        <div class="flex gap-8">
-                            <div><div class="text-3xl font-black text-flex-orange">29.4%</div><div class="text-[9px] uppercase font-bold text-gray-500">CO₂ Reduction</div></div>
-                            <div><div class="text-3xl font-black text-flex-orange">Hybrid</div><div class="text-[9px] uppercase font-bold text-gray-500">Road-Rail</div></div>
-                            <div><div class="text-3xl font-black text-flex-orange">15</div><div class="text-[9px] uppercase font-bold text-gray-500">MENA Lanes</div></div>
-                        </div>
-                    </div>
+  <section class="domains-section" id="domains"><div class="shell"><div class="section-head split appear"><div><div class="section-meta"><span class="serial">05</span><span data-t="domainsKicker">BUILT AROUND THE CARGO</span></div><h2 data-t="domainsTitle">Different industries.<br>The same attention to detail.</h2></div><p data-t="domainsIntro">We start with the real operating constraints of the commodity, customer and location—not a one-size-fits-all promise.</p></div><div class="domain-grid"><article class="domain-card appear"><span class="domain-num">01</span><svg><use href="#shield"/></svg><h3 data-t="d1">Chemical &amp; petrochemical</h3><p data-t="d1Desc">SDS-led review, segregation and cargo-specific controls</p></article><article class="domain-card appear" data-delay="1"><span class="domain-num">02</span><svg><use href="#warehouse"/></svg><h3 data-t="d2">Industrial &amp; manufacturing</h3><p data-t="d2Desc">Production-linked distribution, inbound and outbound planning</p></article><article class="domain-card appear" data-delay="2"><span class="domain-num">03</span><svg><use href="#box"/></svg><h3 data-t="d3">FMCG &amp; consumer goods</h3><p data-t="d3Desc">Pallet operations, replenishment and scheduled transport</p></article><article class="domain-card appear" data-delay="3"><span class="domain-num">04</span><svg><use href="#truck"/></svg><h3 data-t="d4">Project &amp; specialized cargo</h3><p data-t="d4Desc">Equipment and route suitability confirmed case by case</p></article></div></div></section>
 
-                    <div class="relative h-64 lg:h-full min-h-[300px] bg-[#111] rounded-2xl overflow-hidden border border-white/10 flex items-center justify-center">
-                        <div class="absolute inset-0 opacity-30 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-flex-orange/20 via-brand-dark to-brand-dark"></div>
-                        <div class="relative z-10 text-center">
-                            <i data-lucide="map" class="w-16 h-16 text-flex-orange/50 mx-auto mb-4" aria-hidden="true"></i>
-                            <div class="text-xs font-bold uppercase tracking-widest text-gray-400 mb-4">Network Coverage</div>
-                            <div class="flex flex-wrap gap-2 justify-center max-w-xs">
-                                <span class="px-2 py-1 bg-white/10 rounded text-[10px]">Riyadh</span>
-                                <span class="px-2 py-1 bg-white/10 rounded text-[10px]">Dammam</span>
-                                <span class="px-2 py-1 bg-white/10 rounded text-[10px]">Jeddah</span>
-                                <span class="px-2 py-1 bg-white/10 rounded text-[10px]">UAE</span>
-                                <span class="px-2 py-1 bg-white/10 rounded text-[10px]">Kuwait</span>
-                                <span class="px-2 py-1 bg-white/10 rounded text-[10px]">Bahrain</span>
-                                <span class="px-2 py-1 bg-white/10 rounded text-[10px]">Qatar</span>
-                                <span class="px-2 py-1 bg-white/10 rounded text-[10px]">Oman</span>
-                                <span class="px-2 py-1 bg-white/10 rounded text-[10px]">Jordan</span>
-                                <span class="px-2 py-1 bg-white/10 rounded text-[10px]">Iraq</span>
-                                <span class="px-2 py-1 bg-white/10 rounded text-[10px]">Egypt</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+  <section class="intelligence-section" id="intelligence"><div class="shell intelligence-layout"><div class="intelligence-visual appear"><div class="digital-panel"><div class="panel-top"><span>FLEX / PROCESS INTELLIGENCE</span><span class="panel-prototype" data-t="conceptDemo">CONCEPT VIEW</span></div><div class="panel-graphic"><div class="graphic-start"><div class="file-stack"><span>DOC</span><span>SDS</span><span>EVENT</span></div><small data-t="panelInputs">SOURCE EVIDENCE</small></div><div class="graphic-flow"><span></span><span></span><span></span></div><div class="graphic-logic"><svg><use href="#spark"/></svg><strong>HAZALYZE</strong><small>× BlueDXP</small></div><div class="graphic-flow"><span></span><span></span><span></span></div><div class="graphic-end"><strong>REVIEW</strong><span>CONTROL</span><span>DECIDE</span></div></div><div class="panel-bottom"><span data-t="panelProcess">INPUT → REVIEW → ACTION</span><span data-t="panelNoLive">ILLUSTRATIVE, NOT A LIVE DATA CONNECTION</span></div></div></div><div class="intelligence-copy appear" data-delay="1"><div class="section-meta"><span class="serial">+</span><span data-t="intelligenceKicker">THE DIGITAL ADVANTAGE</span></div><h2 data-t="intelligenceTitle">More visibility.<br>Less assumption.</h2><p data-t="intelligenceIntro">Hazalyze and BlueDXP are part of FLEX's evolving digital work: connecting documents, workflows and operational evidence to support better planning and more informed decisions.</p><div class="intelligence-divider"></div><div class="intelligence-line"><svg><use href="#file"/></svg><span data-t="it1">SDS and document intelligence</span></div><div class="intelligence-line"><svg><use href="#route"/></svg><span data-t="it2">Shipment events and exception visibility</span></div><div class="intelligence-line"><svg><use href="#check"/></svg><span data-t="it3">Human-reviewed, explainable outputs</span></div><p class="digital-disclaimer" data-t="intelligenceFoot">Illustrative capability direction. No live customs determination, automated regulatory approval or real-time route status is represented here.</p></div></div></section>
 
-    <!-- ================= COMPLIANCE & TRUST ================= -->
-    <section id="compliance" class="py-24 px-6 bg-brand-card" aria-labelledby="complianceTitle">
-        <div class="max-w-7xl mx-auto">
-            <div class="text-center mb-16">
-                <h2 id="complianceTitle" class="text-section uppercase mb-4" x-text="lang === 'en' ? 'Compliance & Trust' : 'الامتثال والثقة'"></h2>
-                <p class="text-gray-400 max-w-2xl mx-auto" x-text="lang === 'en' ? 'Audit-grade certifications across every regulator that matters in MENA.' : 'شهادات بمستوى التدقيق عبر كل جهة تنظيمية مهمة في الشرق الأوسط.'"></p>
-            </div>
-            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
-                <div class="glass-cyber p-6 rounded-2xl text-center"><i data-lucide="flame" class="w-7 h-7 text-red-400 mx-auto mb-3"></i><div class="text-xs font-bold uppercase tracking-widest">Civil Defense</div><div class="text-[10px] text-gray-500 mt-1">Class 2-9</div></div>
-                <div class="glass-cyber p-6 rounded-2xl text-center"><i data-lucide="shield-check" class="w-7 h-7 text-green-400 mx-auto mb-3"></i><div class="text-xs font-bold uppercase tracking-widest">SFDA</div><div class="text-[10px] text-gray-500 mt-1">Pharma + Food</div></div>
-                <div class="glass-cyber p-6 rounded-2xl text-center"><i data-lucide="receipt" class="w-7 h-7 text-purple-400 mx-auto mb-3"></i><div class="text-xs font-bold uppercase tracking-widest">ZATCA</div><div class="text-[10px] text-gray-500 mt-1">Customs + VAT</div></div>
-                <div class="glass-cyber p-6 rounded-2xl text-center"><i data-lucide="award" class="w-7 h-7 text-flex-orange mx-auto mb-3"></i><div class="text-xs font-bold uppercase tracking-widest">ISO 9001</div><div class="text-[10px] text-gray-500 mt-1">Quality</div></div>
-                <div class="glass-cyber p-6 rounded-2xl text-center"><i data-lucide="leaf" class="w-7 h-7 text-green-400 mx-auto mb-3"></i><div class="text-xs font-bold uppercase tracking-widest">ISO 14001</div><div class="text-[10px] text-gray-500 mt-1">Environment</div></div>
-                <div class="glass-cyber p-6 rounded-2xl text-center"><i data-lucide="hard-hat" class="w-7 h-7 text-yellow-400 mx-auto mb-3"></i><div class="text-xs font-bold uppercase tracking-widest">ISO 45001</div><div class="text-[10px] text-gray-500 mt-1">OH&S</div></div>
-            </div>
-        </div>
-    </section>
+  <section class="cta-section" id="about"><div class="cta-photo" aria-hidden="true"></div><div class="shell cta-content"><div class="section-meta"><span class="serial">↗</span><span data-t="ctaKicker">THE NEXT MOVE STARTS WITH A CONVERSATION</span></div><h2 data-t="ctaTitle">When the picture changes,<br>stay ready for what comes next.</h2><p data-t="ctaIntro">Talk to FLEX about a warehouse requirement, a Saudi distribution programme, a regional corridor or a more integrated supply-chain solution.</p><div class="cta-actions"><button type="button" class="button button-orange" data-open-brief><span data-t="ctaButton">Brief your requirement</span><svg><use href="#arrow"/></svg></button><a href="mailto:info@scsflex.com" class="button button-ghost"><span>info@scsflex.com</span><svg><use href="#arrow-right"/></svg></a></div></div></section>
+  </main>
 
-    </main>
+  <footer class="footer"><div class="shell footer-top"><div><a class="footer-brand" href="#top">FLE<span>X</span></a><p data-t="footerBlurb">Saudi-rooted logistics for industry, trade and the regions they connect.</p></div><div class="footer-columns"><div><strong data-t="footerExplore">EXPLORE</strong><a href="#solutions" data-t="navSolutions">Solutions</a><a href="#warehouse" data-t="navWarehousing">Warehousing</a><a href="#network" data-t="navNetwork">Network</a><a href="#method" data-t="navMethod">Our approach</a></div><div><strong data-t="footerConnect">CONNECT</strong><a href="https://www.scsflex.com/" target="_blank" rel="noopener" data-t="officialSite">Official website</a><a href="mailto:info@scsflex.com">info@scsflex.com</a><a href="#intelligence">Hazalyze / BlueDXP</a></div></div></div><div class="shell footer-bottom"><span data-t="footerDisclaimer">Design study only. This preview is not an operational booking service. Service, facility, regulatory and capacity statements require approval before public launch. Photos are illustrative, not representations of FLEX-owned facilities or vehicles.</span><span>© FLEX LOGISTICS / 2026</span></div><div class="photo-credits shell">Illustrative photography: Unsplash contributors Haris Illahi, Ashley, Tom Jackson, and Patryk Jasiński. Map shapes: Natural Earth via world.geo.json.</div></footer>
 
-    <!-- ================= FOOTER ================= -->
-    <footer id="contact" class="bg-[#020408] pt-24 pb-12 px-6 border-t border-white/5" itemscope itemtype="https://schema.org/Organization">
-        <meta itemprop="name" content="Flex Logistics">
-        <meta itemprop="url" content="https://flexlogistics.com/">
-        <div class="max-w-7xl mx-auto grid md:grid-cols-4 gap-12 mb-20">
-            <div class="col-span-2">
-                <span class="text-2xl font-black text-white">FLEX<span class="text-flex-orange">LOGISTICS</span></span>
-                <p class="text-gray-500 text-sm mt-6 leading-relaxed max-w-sm" x-text="lang === 'en' ? 'Empowering businesses with intelligent, compliant, scalable logistics — engineered in Saudi Arabia, deployed across MENA. Aligned with Vision 2030.' : 'تمكين الشركات بحلول لوجستية ذكية ومتوافقة وقابلة للتطوير — مصممة في المملكة، منتشرة في الشرق الأوسط. متوافقة مع رؤية 2030.'"></p>
-                <div class="flex gap-3 mt-8">
-                    <a href="https://www.linkedin.com/company/flex-logistics" rel="noopener noreferrer" aria-label="LinkedIn" class="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center hover:border-flex-orange hover:text-flex-orange transition"><i data-lucide="linkedin" class="w-4 h-4"></i></a>
-                    <a href="https://x.com/FlexLogistics" rel="noopener noreferrer" aria-label="X / Twitter" class="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center hover:border-flex-orange hover:text-flex-orange transition"><i data-lucide="twitter" class="w-4 h-4"></i></a>
-                    <a href="mailto:info@flexlogistics.com" aria-label="Email" class="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center hover:border-flex-orange hover:text-flex-orange transition"><i data-lucide="mail" class="w-4 h-4"></i></a>
-                </div>
-            </div>
-
-            <div>
-                <h4 class="text-xs font-bold uppercase tracking-[0.2em] mb-8 text-white">Contact</h4>
-                <div class="space-y-4">
-                    <a href="tel:+966138099826" itemprop="telephone" class="flex items-center gap-3 text-gray-400 hover:text-flex-orange transition text-sm"><i data-lucide="phone" class="w-4 h-4"></i> +966 13 809 9826</a>
-                    <a href="mailto:info@flexlogistics.com" itemprop="email" class="flex items-center gap-3 text-gray-400 hover:text-flex-orange transition text-sm"><i data-lucide="mail" class="w-4 h-4"></i> info@flexlogistics.com</a>
-                    <div class="flex items-start gap-3 text-gray-400 text-sm"><i data-lucide="map-pin" class="w-4 h-4 mt-1"></i> <span itemprop="address">Support Services Area,<br>Dammam 34341, KSA</span></div>
-                </div>
-            </div>
-
-            <div>
-                <h4 class="text-xs font-bold uppercase tracking-[0.2em] mb-8 text-white">Platform</h4>
-                <div class="flex flex-col gap-3 text-sm text-gray-400">
-                    <a href="/capabilities.html" class="hover:text-flex-orange transition">Capabilities Showcase</a>
-                    <a href="/capabilities.html#hazalyze" class="hover:text-flex-orange transition">Hazalyze AI</a>
-                    <a href="/capabilities.html#processmining" class="hover:text-flex-orange transition">Process Mining</a>
-                    <a href="/capabilities.html#mena" class="hover:text-flex-orange transition">MENA Network</a>
-                    <a href="/security.html" class="hover:text-flex-orange transition">Security</a>
-                    <a href="/privacy.html" class="hover:text-flex-orange transition">Privacy Policy</a>
-                    <a href="/terms.html" class="hover:text-flex-orange transition">Terms of Service</a>
-                </div>
-            </div>
-        </div>
-
-        <div class="max-w-7xl mx-auto pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4 text-[10px] text-gray-600 font-bold uppercase tracking-widest">
-            <p>&copy; <span id="year">2026</span> Flex Logistics Saudi Arabia. All rights reserved.</p>
-            <div class="flex gap-6 flex-wrap justify-center">
-                <a href="/privacy.html" class="hover:text-flex-orange transition">Privacy</a>
-                <a href="/terms.html" class="hover:text-flex-orange transition">Terms</a>
-                <a href="/security.html" class="hover:text-flex-orange transition">Security</a>
-                <a href="/.well-known/security.txt" class="hover:text-flex-orange transition">security.txt</a>
-                <a href="/sitemap.xml" class="hover:text-flex-orange transition">Sitemap</a>
-            </div>
-        </div>
-    </footer>
-
+  <dialog class="brief-dialog" id="briefDialog" aria-labelledby="briefHeading"><div class="brief-top"><div><span class="brief-kicker" data-t="briefKicker">FLEX / REQUEST BRIEF</span><h2 id="briefHeading" data-t="briefHeading">Tell us what needs to move.</h2><p data-t="briefIntro">Create a structured enquiry for FLEX. This preview does not submit or store your data; you can copy the brief or open it in your email application.</p></div><button id="briefClose" class="close-button" type="button" aria-label="Close"><svg><use href="#close"/></svg></button></div>
+    <div class="brief-tabs" role="group" aria-label="Choose enquiry type"><button type="button" data-brief-tab="transport" class="brief-tab active" aria-pressed="true" data-t="briefTransport">Transport / cross-border</button><button type="button" data-brief-tab="storage" class="brief-tab" aria-pressed="false" data-t="briefStorage">Warehousing / 3PL</button></div>
+    <form id="briefForm" class="brief-form"><label><span data-t="fieldOrigin">Origin / required location</span><input id="fieldOrigin" type="text" placeholder="Dammam, KSA" maxlength="140" autocomplete="off" required></label><label id="destinationWrap"><span data-t="fieldDestination">Destination</span><input id="fieldDestination" type="text" placeholder="Dubai, UAE" maxlength="140" autocomplete="off"></label><label><span data-t="fieldCargo">Commodity / cargo</span><input id="fieldCargo" type="text" placeholder="e.g. palletized industrial products" maxlength="180" autocomplete="off" required></label><label><span data-t="fieldVolume">Approx. volume / duration</span><input id="fieldVolume" type="text" placeholder="e.g. 18 pallets, 12 tonnes" maxlength="180" autocomplete="off"></label><label class="wide"><span data-t="fieldNotes">Operational considerations</span><textarea id="fieldNotes" rows="3" maxlength="1200" placeholder="Ready date, packaging, SDS/UN classification if relevant, customs and receiving arrangements..."></textarea></label><div class="brief-notice wide"><svg><use href="#shield"/></svg><span data-t="briefSafety">Dangerous-goods acceptance, border routing and compliance requirements are confirmed case by case by the responsible parties.</span></div><div class="brief-buttons wide"><button class="button button-orange" type="submit"><span data-t="prepareBrief">Prepare my brief</span><svg><use href="#arrow-right"/></svg></button><button type="button" class="button button-light" id="copyBrief" disabled><span data-t="copyBrief">Copy summary</span></button><button type="button" class="button button-light" id="emailBrief" disabled><span data-t="emailBrief">Open email</span></button></div><output id="briefStatus" class="brief-status wide" role="status" aria-live="polite"></output></form>
+  </dialog>
 </body>
 </html>
