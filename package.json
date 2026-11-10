@@ -2,8 +2,8 @@
   "name": "flex-logistics-site",
   "version": "1.0.0",
   "private": true,
-  "description": "Flex Logistics — production marketing + capabilities site. Static, no build step.",
-  "homepage": "https://flexlogistics.com/",
+  "description": "FLEX Logistics Saudi Arabia—static corporate design concept preview",
+  "homepage": "https://scsflex.com/",
   "scripts": {
     "dev": "npx --yes serve@latest -l 8090 .",
     "preview": "npx --yes serve@latest -l 8090 .",
@@ -20,5 +20,8 @@
   },
   "devDependencies": {
     "tailwindcss": "^3.4.17"
+  },
+  "dependencies": {
+    "sharp": "^0.34.4"
   }
 }
