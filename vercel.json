@@ -1,7 +1,7 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "version": 2,
-  "buildCommand": "node --check assets/continuity.js && node scripts/check-continuity.mjs",
+  "buildCommand": "node scripts/prepare-photo-assets.mjs && node --check assets/continuity.js && node scripts/check-continuity.mjs",
   "outputDirectory": ".",
   "cleanUrls": false,
   "trailingSlash": false,
